@@ -1,0 +1,26 @@
+=== COMMAND: C:\Users\Hi Windows 11 Home\AppData\Local\Programs\Python\Python313\python.exe D:\deephedging-rewritten\tests\test_warmup_resume_jax.py ===
+=== ELAPSED: 10.97s ===
+=== EXIT CODE: 0 ===
+
+--- STDOUT ---
+============================================================
+TEST: JAX Warmup and Resume Invariants
+============================================================
+1. Testing Warmup Invariant...
+   Warmup Param Drift: 0.00e+00 (Threshold: 0.0)
+   Warmup Optimizer Step: 0 (Expected: 0)
+   -> Warmup Verdict: PASS
+
+2. Testing Cross-Process Checkpoint Resume Invariant...
+   Max Best Weights Abs Diff: 0.00e+00 (Threshold <= 1e-6)
+   Max Last Weights Abs Diff: 0.00e+00 (Threshold <= 1e-6)
+   Epoch 2 Train Loss Abs Diff: 0.00e+00 (Threshold <= 1e-6)
+   Epoch 2 Val Loss Abs Diff: 0.00e+00 (Threshold <= 1e-6)
+   Best Epoch Match: Resumed=1, Uninterrupted=1
+   -> Resume Verdict: PASS
+============================================================
+VERDICT: JAX WARMUP & RESUME TEST PASSED COMPLETELY!
+============================================================
+
+--- STDERR ---
+

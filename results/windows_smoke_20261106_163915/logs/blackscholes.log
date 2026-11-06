@@ -1,0 +1,39 @@
+[2026-11-06 16:39:40] Starting execution of blackscholes.ipynb
+[2026-11-06 16:39:40] Backend: jax | Kernel: dh-rewritten-jax
+[2026-11-06 16:39:40] DH_MODE=smoke | DH_CHECKPOINTS=D:\deephedging-rewritten\results\windows_smoke_20261106_163915\isolated_checkpoints
+[2026-11-06 16:39:41] Kernel initialized successfully. Total cells to execute: 13
+[2026-11-06 16:39:41] Executing Code Cell 1: import os, sys...
+[2026-11-06 16:39:44] Cell 1 completed in 2.40s
+[2026-11-06 16:39:44]   [stdout] blackscholes.ipynb initialized | Mode: smoke | Checkpoints: D:\deephedging-rewritten\results\windows_smoke_20261106_163915\isolated_checkpoints
+[2026-11-06 16:39:44] Executing Code Cell 3: cfg = get_config("bs_base", mode=MODE)...
+[2026-11-06 16:39:54] Cell 3 completed in 9.95s
+[2026-11-06 16:39:54]   [stdout] epoch 1/2: loss 0.28423 val 0.26471 best@0 (1.57s)
+[2026-11-06 16:39:54]   [stdout] epoch 2/2: loss 0.43047 val 0.39440 best@0 (0.04s)
+[2026-11-06 16:39:54]   -> Querying kernel for configuration metrics...
+[2026-11-06 16:39:54]   [METRIC] Config 'bs_base': samples=500, epochs=2, train_loss=0.430472, val_loss=0.394398, finite=True
+[2026-11-06 16:39:54] Executing Code Cell 5: cfg = get_config("bs_exp2", mode=MODE)...
+[2026-11-06 16:40:02] Cell 5 completed in 8.81s
+[2026-11-06 16:40:02]   [stdout] epoch 1/2: loss 0.25323 val 0.23418 best@0 (1.55s)
+[2026-11-06 16:40:02]   [stdout] epoch 2/2: loss 0.62657 val 0.53788 best@0 (0.05s)
+[2026-11-06 16:40:02]   -> Querying kernel for configuration metrics...
+[2026-11-06 16:40:02]   [METRIC] Config 'bs_exp2': samples=500, epochs=2, train_loss=0.626574, val_loss=0.537882, finite=True
+[2026-11-06 16:40:02] Executing Code Cell 7: cfg = get_config("bs_nodrift", mode=MODE)...
+[2026-11-06 16:40:08] Cell 7 completed in 5.69s
+[2026-11-06 16:40:08]   [stdout] epoch 1/2: loss 0.30547 val 0.28277 best@0 (1.32s)
+[2026-11-06 16:40:08]   [stdout] epoch 2/2: loss 0.36723 val 0.33875 best@0 (0.03s)
+[2026-11-06 16:40:08]   -> Querying kernel for configuration metrics...
+[2026-11-06 16:40:08]   [METRIC] Config 'bs_nodrift': samples=500, epochs=2, train_loss=0.367229, val_loss=0.338752, finite=True
+[2026-11-06 16:40:08] Executing Code Cell 9: cfg = get_config("bs_nodrift_exp2", mode=MODE)...
+[2026-11-06 16:40:16] Cell 9 completed in 7.72s
+[2026-11-06 16:40:16]   [stdout] epoch 1/2: loss 0.18314 val 0.16891 best@0 (1.36s)
+[2026-11-06 16:40:16]   [stdout] epoch 2/2: loss 0.17947 val 0.16195 best@0 (0.04s)
+[2026-11-06 16:40:16]   -> Querying kernel for configuration metrics...
+[2026-11-06 16:40:16]   [METRIC] Config 'bs_nodrift_exp2': samples=500, epochs=2, train_loss=0.179474, val_loss=0.161950, finite=True
+[2026-11-06 16:40:16] Executing Code Cell 11: cfg = get_config("bs_small", mode=MODE)...
+[2026-11-06 16:40:24] Cell 11 completed in 8.03s
+[2026-11-06 16:40:24]   [stdout] epoch 1/2: loss 0.41650 val 0.38701 best@0 (1.89s)
+[2026-11-06 16:40:24]   [stdout] epoch 2/2: loss 0.62717 val 0.57338 best@0 (0.04s)
+[2026-11-06 16:40:24]   -> Querying kernel for configuration metrics...
+[2026-11-06 16:40:24]   [METRIC] Config 'bs_small': samples=500, epochs=2, train_loss=0.627166, val_loss=0.573383, finite=True
+[2026-11-06 16:40:25] Notebook blackscholes.ipynb finished in 45.30s. Captured 5/5 configs.
+[2026-11-06 16:40:25] Saved executed notebook to: D:\deephedging-rewritten\results\windows_smoke_20261106_163915\executed_notebooks\blackscholes.ipynb

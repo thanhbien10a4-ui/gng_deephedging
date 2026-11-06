@@ -1,0 +1,11 @@
+notebook,config_id,backend,interpreter,samples,actual_epochs,duration_sec,train_loss,val_loss,is_finite,status,error
+trainer-bs.ipynb,trainer_bs_coarse,tensorflow,D:\deephedging-rewritten\.venv-tf\Scripts\python.exe,500,2,6.07,0.47653865814208984,0.5089355111122131,True,PASS,
+trainer-bs.ipynb,trainer_bs_fine,tensorflow,D:\deephedging-rewritten\.venv-tf\Scripts\python.exe,500,2,3.63,0.7476335167884827,0.6887674331665039,True,PASS,
+trainer-recurrent-barrier.ipynb,barrier_none,tensorflow,D:\deephedging-rewritten\.venv-tf\Scripts\python.exe,500,2,10.53,0.007908185943961143,0.00833719689399004,True,PASS,
+trainer-recurrent-barrier.ipynb,barrier_digital,tensorflow,D:\deephedging-rewritten\.venv-tf\Scripts\python.exe,500,2,9.31,0.07942527532577515,0.04686764255166054,True,PASS,
+trainer-recurrent-fwdstart.ipynb,fwd_none,tensorflow,D:\deephedging-rewritten\.venv-tf\Scripts\python.exe,500,2,7.87,0.06361358612775803,0.06805741786956787,True,PASS,
+trainer-recurrent-fwdstart.ipynb,fwd_all_modes,tensorflow,D:\deephedging-rewritten\.venv-tf\Scripts\python.exe,500,2,6.02,0.06420556455850601,0.06800465285778046,True,PASS,
+trainer-recurrent-fwdstart.ipynb,fwd_aggr_2,tensorflow,D:\deephedging-rewritten\.venv-tf\Scripts\python.exe,500,2,5.33,0.07848192006349564,0.08352331072092056,True,PASS,
+trainer-recurrent-fwdstart.ipynb,fwd_aggr_5bnd,tensorflow,D:\deephedging-rewritten\.venv-tf\Scripts\python.exe,500,2,5.47,0.07008473575115204,0.07554364204406738,True,PASS,
+trainer-recurrent-fwdstart.ipynb,fwd_aggr_5,tensorflow,D:\deephedging-rewritten\.venv-tf\Scripts\python.exe,500,2,5.76,0.06135912239551544,0.06485138833522797,True,PASS,
+trainer-recurrent-fwdstart.ipynb,fwd_past_repr,tensorflow,D:\deephedging-rewritten\.venv-tf\Scripts\python.exe,500,2,5.29,0.061057403683662415,0.06295178085565567,True,PASS,

@@ -1,0 +1,37 @@
+[2026-11-06 16:40:25] Starting execution of trainer-american_digital.ipynb
+[2026-11-06 16:40:25] Backend: jax | Kernel: dh-rewritten-jax
+[2026-11-06 16:40:25] DH_MODE=smoke | DH_CHECKPOINTS=D:\deephedging-rewritten\results\windows_smoke_20261106_163915\isolated_checkpoints
+[2026-11-06 16:40:27] Kernel initialized successfully. Total cells to execute: 9
+[2026-11-06 16:40:27] Executing Code Cell 1: import os, sys, math...
+[2026-11-06 16:40:30] Cell 1 completed in 3.23s
+[2026-11-06 16:40:30]   [stdout] trainer-american_digital.ipynb initialized | Mode: smoke
+[2026-11-06 16:40:30] Executing Code Cell 3: barrier = 0.95...
+[2026-11-06 16:40:30] Cell 3 completed in 0.03s
+[2026-11-06 16:40:30]   [stdout] Simulating American Digital World: 500 samples, 100 steps...
+[2026-11-06 16:40:30] Executing Code Cell 5: agent_base = AgentConfig(...
+[2026-11-06 16:41:08] Cell 5 completed in 37.25s
+[2026-11-06 16:41:08]   [stdout] --- Training American Digital: none (epochs=2) ---
+[2026-11-06 16:41:08]   [stdout] epoch 1/2: loss 3.03913 val 2.97080 best@1 (2.06s)
+[2026-11-06 16:41:08]   [stdout] epoch 2/2: loss 0.67213 val 0.79738 best@2 (0.45s)
+[2026-11-06 16:41:08]   [stdout] --- Training American Digital: digital (epochs=2) ---
+[2026-11-06 16:41:08]   [stdout] epoch 1/2: loss 0.52705 val 0.67646 best@1 (2.08s)
+[2026-11-06 16:41:08]   [stdout] epoch 2/2: loss 0.52550 val 0.67319 best@2 (0.42s)
+[2026-11-06 16:41:08]   [stdout] --- Training American Digital: standard (epochs=2) ---
+[2026-11-06 16:41:08]   [stdout] epoch 1/2: loss 0.56792 val 0.71747 best@1 (1.94s)
+[2026-11-06 16:41:08]   [stdout] epoch 2/2: loss 0.52733 val 0.67479 best@2 (0.40s)
+[2026-11-06 16:41:08]   [stdout] --- Training American Digital: mix_relu (epochs=2) ---
+[2026-11-06 16:41:08]   [stdout] epoch 1/2: loss 2.71242 val 2.67412 best@1 (2.00s)
+[2026-11-06 16:41:08]   [stdout] epoch 2/2: loss 1.46812 val 1.56249 best@2 (0.51s)
+[2026-11-06 16:41:08]   [stdout] --- Training American Digital: mix_softplus (epochs=2) ---
+[2026-11-06 16:41:08]   [stdout] epoch 1/2: loss 0.59719 val 0.74429 best@1 (2.23s)
+[2026-11-06 16:41:08]   [stdout] epoch 2/2: loss 0.52210 val 0.67153 best@2 (0.88s)
+[2026-11-06 16:41:08]   -> Querying kernel for configuration metrics...
+[2026-11-06 16:41:08]   [METRIC] Config 'am_dig_none': samples=500, epochs=2, train_loss=0.672133, val_loss=0.797379, finite=True
+[2026-11-06 16:41:08]   [METRIC] Config 'am_dig_digital': samples=500, epochs=2, train_loss=0.525495, val_loss=0.673194, finite=True
+[2026-11-06 16:41:08]   [METRIC] Config 'am_dig_standard': samples=500, epochs=2, train_loss=0.527333, val_loss=0.674788, finite=True
+[2026-11-06 16:41:08]   [METRIC] Config 'am_dig_mix_relu': samples=500, epochs=2, train_loss=1.468122, val_loss=1.562493, finite=True
+[2026-11-06 16:41:08]   [METRIC] Config 'am_dig_mix_softplus': samples=500, epochs=2, train_loss=0.522096, val_loss=0.671528, finite=True
+[2026-11-06 16:41:08] Executing Code Cell 7: try:...
+[2026-11-06 16:41:08] Cell 7 completed in 0.26s
+[2026-11-06 16:41:09] Notebook trainer-american_digital.ipynb finished in 43.73s. Captured 5/5 configs.
+[2026-11-06 16:41:09] Saved executed notebook to: D:\deephedging-rewritten\results\windows_smoke_20261106_163915\executed_notebooks\trainer-american_digital.ipynb

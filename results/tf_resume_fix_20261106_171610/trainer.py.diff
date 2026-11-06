@@ -1,0 +1,21 @@
+--- before/trainer.py
++++ dh_tf/trainer.py
+@@ -197,7 +197,7 @@
+                     # restore gym
+                     if not self.gym.restore_from_cache( cache['gym'] ):
+                         if self.print_text: print(\
+-                              "\rCache consistency error: could not write weights from cache to current model. This is most likely because the model architecture changed.\n"\
++                              "\rCache consistency error: could not restore gym weights and/or optimizer state (Adam m/v/iterations) from cache. Exact resume is not supported; training starts from scratch.\n"\
+                               "Use config.train.caching.mode = 'renew' to rebuild the cache if this is the case. Use config.train.caching.mode = 'off' to turn caching off.\n")
+                     else:
+                         self.progress_data = cache['progress_data']
+@@ -428,7 +428,8 @@
+                             y              = world.tf_y,
+                             batch_size     = batch_size,
+                             sample_weight  = world.tf_sample_weights * float(world.nSamples),  # sample_weights are poorly handled in TF
+-                            epochs         = epochs - (monitor.current_epoch+1),
++                            epochs         = epochs,
++                            initial_epoch  = monitor.current_epoch+1,
+                             callbacks      = monitor if tboard is None else [ monitor, tboard ],
+                             verbose        = tf_verbose )
+         except KeyboardInterrupt:

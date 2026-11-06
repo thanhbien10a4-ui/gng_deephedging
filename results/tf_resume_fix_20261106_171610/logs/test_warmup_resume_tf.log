@@ -1,0 +1,21 @@
+=== EXIT CODE: 0 ===
+--- STDOUT ---
+Tensorflow version 2.15.1 running on 1 CPUs and 0 GPUs
+============================================================
+TEST: TensorFlow Warmup and Resume Invariants
+============================================================
+1. Testing Warmup Invariant...
+   Warmup Param Drift: 0.00e+00 (Threshold: 0.0)
+   -> Warmup Verdict: PASS
+
+2. Testing Cross-Process Checkpoint/Cache Resume Invariant...
+   Cache saved after epoch 1. Found 1 cache files.
+   Max Weight Abs Diff vs Continuous: 0.0000e+00 (Threshold <= 1e-5)
+   Cache contents: keys=['gym', 'progress_data'], progress_data.epoch=1, opt_vars=19, iterations=8
+============================================================
+VERDICT: TENSORFLOW RESUME TEST PASSED
+
+--- STDERR ---
+WARNING:tensorflow:From D:\deephedging-rewritten\.venv-tf\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+

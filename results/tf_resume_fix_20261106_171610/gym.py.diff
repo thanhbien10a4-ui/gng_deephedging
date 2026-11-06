@@ -1,0 +1,174 @@
+--- before/gym.py
++++ dh_tf/gym.py
+@@ -306,84 +306,119 @@
+         Create a dictionary which allows reconstructing the current model.
+         The content of the dictionary are IDs to validate that we are reconstructing the same type of gym,
+         weights of the gym and the optimizer, and the last learning rate of the optimizer.
+-        
+-        Note: reconstruction of an optimizer state is not natively supported in TensorFlow. Below might not work perfectly.
++
++        The gym weights stored are the *current* (last-epoch) weights, i.e. the ones that belong
++        together with the optimizer state. Best weights are tracked separately by the trainer.
++
++        Optimizer state is stored as numpy arrays in the order of ``optimizer.variables``
++        (Keras >= 2.11: [iterations, m_0..m_k, v_0..v_k]).
+         """
+         assert not self.agent is None, "build() not called yet"
+-        opt_weights = self.optimizer.get_weights() if not getattr(self.optimizer,"get_weights",None) is None else None
+         opt_config  = tf.keras.optimizers.serialize( self.optimizer )['config'] if not self.optimizer is None else None
+-        
+-        if not opt_config is None and opt_weights is None:
+-            # tensorflow 2.11 abandons 'get_weights'
+-            variables   = self.optimizer.variables()        
+-            opt_weights = [ np.array( v ) for v in variables ]
+-        
+-        # we compute a config ID for all parameters but the learning rate
+-        # That should work for most optimizers, but future optimizers may
+-        # rquire copying furhter variables
+         id_config   = { k: opt_config[k] for k in opt_config if k != 'learning_rate' } if not opt_config is None else None
+         opt_uid     = uniqueHash( id_config ) if not id_config is None else ""
+-        opt_weights = self.optimizer.get_weights() if TF_VERSION <= 210 else [ w.value() for w in self.optimizer.variables() ]
+-        
++        if self.optimizer is None:
++            opt_weights = None
++        elif TF_VERSION <= 210 and getattr(self.optimizer, "get_weights", None) is not None:
++            opt_weights = [ np.array(w) for w in self.optimizer.get_weights() ]
++        else:
++            opt_weights = [ np.array( v ) for v in self.optimizer.variables ]
++
+         return dict( gym_uid       = self.unique_id,
+                      gym_weights   = self.get_weights(),
+                      opt_uid       = opt_uid,
+                      opt_config    = opt_config,
+                      opt_weights   = opt_weights
+                    )
+-                
++
+     def restore_from_cache( self, cache ) -> bool:
+         """
+-        Restore 'self' from cache.
+-        Note that we have to call() this object before being able to use this function        
+-        This function returns False if the cached weights do not match the current architecture.
+-        
+-        Note: reconstruction of an optimizer state is not natively supported in TensorFlow. Below might not work perfectly.
+-        """        
++        Restore 'self' (gym weights AND optimizer state) from cache.
++        Note that we have to call() and compile() this object before being able to use this function.
++
++        Returns True only if both the gym weights and the full optimizer state (iterations and all
++        slot variables) were restored and verified. Returns False otherwise, in which case neither
++        the gym weights nor the optimizer are modified: an exact resume is not possible and the
++        caller must not continue from the cached progress.
++        """
+         assert not self.agent is None, "build() not called yet"
+         gym_uid     = cache['gym_uid']
+         gym_weights = cache['gym_weights']
+         opt_uid     = cache['opt_uid']
+-        opt_config  = cache['opt_config']
+-        opt_weights = cache['opt_weights']
+-        
+-        self_opt_config = tf.keras.optimizers.serialize( self.optimizer )['config'] if not self.optimizer is None else None
+-        self_id_config  = { k: opt_config[k] for k in opt_config if k != 'learning_rate' } if not self_opt_config is None else None
+-        self_opt_uid    = uniqueHash( self_id_config ) if not self_opt_config is None else ""
+-        
++        opt_weights = cache.get('opt_weights', None)
++
+         # check that the objects correspond to the correct configs
+         if gym_uid != self.unique_id:
+             _log.warn( "Cache restoration error: provided cache object has gym ID %s vs current ID %s", gym_uid, self.unique_id)
+             return False
++        if self.optimizer is None:
++            _log.warn( "Cache restoration error: gym has no optimizer (compile() not called); exact resume is not supported.")
++            return False
++        self_opt_config = tf.keras.optimizers.serialize( self.optimizer )['config']
++        self_id_config  = { k: self_opt_config[k] for k in self_opt_config if k != 'learning_rate' }
++        self_opt_uid    = uniqueHash( self_id_config )
+         if opt_uid != self_opt_uid:
+-            _log.warn( "Cache restoration error: provided cache object has optimizer ID %s vs current ID %s\n"\
+-                       "Stored configuration: %s\nCurrent configuration: %s", opt_uid, self_opt_uid, opt_config, self_opt_config)
+-            return False
+-
+-        # load weights
+-        # Note that we will continue with the restored weights for the gym even if we fail to restore the optimizer
+-        # This is likely the desired behaviour.
++            _log.warn( "Cache restoration error: provided cache object has optimizer ID %s vs current ID %s", opt_uid, self_opt_uid)
++            return False
++        if opt_weights is None or len(opt_weights) == 0:
++            _log.warn( "Cache restoration error: cache contains no optimizer state. Exact resume is NOT supported for this "\
++                       "checkpoint (Adam m/v/iterations missing). Refusing to resume with a freshly initialized optimizer.")
++            return False
++
++        # make sure the optimizer slots exist (Keras creates them lazily on the first apply_gradients)
++        opt_vars = self.optimizer.variables
++        if len(opt_vars) != len(opt_weights):
++            self.optimizer.build( self.trainable_variables )
++            opt_vars = self.optimizer.variables
++        if len(opt_vars) != len(opt_weights):
++            _log.warn( "Cache restoration error: optimizer has %ld variables after build(), cache has %ld. Exact resume is NOT supported.", len(opt_vars), len(opt_weights))
++            return False
++        opt_weights = [ np.asarray(w) for w in opt_weights ]
++        for v, w in zip(opt_vars, opt_weights):
++            if tuple(v.shape) != tuple(w.shape):
++                _log.warn( "Cache restoration error: optimizer variable %s has shape %s, cache has %s. Exact resume is NOT supported.", v.name, tuple(v.shape), tuple(w.shape))
++                return False
++
++        # load gym (last-epoch) weights
+         try:
+             self.set_weights( gym_weights )
+         except ValueError as v:
+             _log.warn( "Cache restoration error: provided cache gym weights were not compatible with the gym.\n%s", v)
+             return False
++
++        # load optimizer state and verify
++        for v, w in zip(opt_vars, opt_weights):
++            v.assign( w )
++        for v, w in zip(opt_vars, opt_weights):
++            if not np.array_equal( v.numpy(), w ):
++                _log.warn( "Cache restoration error: optimizer variable %s could not be verified after assignment.", v.name)
++                return False
+         return True
+-    
+-        if self.optimizer is None:
+-            return True    
+-        # set learning rate to last recoreded value
+-        if 'learning_rate' in opt_config:
+-            self.optimizer.learning_rate = opt_config['learning_rate']
+-        # restore weights
++
++    def fit( self, *args, **kwargs ):
++        """
++        Wraps ``tf.keras.Model.fit`` so that when resuming from ``initial_epoch > 0``,
++        Keras's native ``TensorLikeDataAdapter`` (``tf.random.shuffle``) is built for the
++        full ``epochs`` horizon and its dataset iterator advances past the ``initial_epoch``
++        already-completed epochs before training resumes.
++        """
++        initial_epoch = int( kwargs.get('initial_epoch', 0) or 0 )
++        if initial_epoch <= 0:
++            return super().fit( *args, **kwargs )
++        from keras.src.engine import data_adapter
++        orig_get_data_handler = data_adapter.get_data_handler
++        def _resumed_get_data_handler( *dh_args, **dh_kwargs ):
++            init_ep = int( dh_kwargs.get('initial_epoch', 0) or 0 )
++            if init_ep > 0:
++                dh_kwargs_full = dict( dh_kwargs, initial_epoch=0 )
++                dh = orig_get_data_handler( *dh_args, **dh_kwargs_full )
++                dh._initial_epoch = init_ep
++                dh._dataset = dh._dataset.skip( init_ep * dh.inferred_steps )
++                return dh
++            return orig_get_data_handler( *dh_args, **dh_kwargs )
++        data_adapter.get_data_handler = _resumed_get_data_handler
+         try:
+-            self.optimizer.set_weights( opt_weights )
+-        except ValueError as v:
+-            isTF211 = getattr(self.optimizer,"get_weights",None) is None
+-            isTF211 = "" if not isTF211 else "Code is running TensorFlow 2.11 or higher for which tf.keras.optimizers.Optimizer.get_weights() was retired. Current code is experimental. Review create_cache/restore_from_cache.\n"
+-            _log.warn( "Cache restoration error: cached optimizer weights were not compatible with existing optimizer.\n%s%s", v)
+-            return False
+-
+-        
+-        return True
+-
++            return super().fit( *args, **kwargs )
++        finally:
++            data_adapter.get_data_handler = orig_get_data_handler
++

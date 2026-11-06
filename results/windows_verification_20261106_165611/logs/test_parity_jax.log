@@ -1,0 +1,18 @@
+=== COMMAND: C:\Users\Hi Windows 11 Home\AppData\Local\Programs\Python\Python313\python.exe D:\deephedging-rewritten\tests\test_parity_jax.py ===
+=== ELAPSED: 8.76s ===
+=== EXIT CODE: 0 ===
+
+--- STDOUT ---
+============================================================
+TEST: Numerical Parity (JAX Rewritten vs Original JAX)
+============================================================
+1. Spot Path Data Max Abs Diff: 0.00e+00 (Threshold: 0.0)
+2. Rollout Actions Max Abs Diff: 0.00e+00 (Threshold <= 1e-6)
+3. Initial Loss Parity: Rewritten=1.09503448, Orig=1.09503448, RelDiff=0.00e+00 (Threshold <= 1e-6)
+4. One Adam Step Parameter Max Abs Diff: 0.00e+00 (Threshold <= 1e-5)
+============================================================
+VERDICT: JAX NUMERICAL PARITY TEST PASSED COMPLETELY!
+============================================================
+
+--- STDERR ---
+

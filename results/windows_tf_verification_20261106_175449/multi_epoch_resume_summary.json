@@ -1,0 +1,91 @@
+{
+  "batch_index_verification": {
+    "continuous_epochs": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "verified_identical": true,
+    "sample_counts_per_epoch": [
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  "configs": {
+    "ff": {
+      "continuous_5_epochs": {
+        "epochs": 5,
+        "iterations": 20,
+        "train_loss": 0.08262255787849426,
+        "val_loss": 0.08287191390991211
+      },
+      "resume_2_to_5": {
+        "pass": true,
+        "epochs": 5,
+        "iterations": 20,
+        "last_weights_maxdiff": 0.0,
+        "adam_m_maxdiff": 0.0,
+        "adam_v_maxdiff": 0.0,
+        "train_loss_diff": 0.0,
+        "val_loss_diff": 0.0,
+        "restore_time_sec": 0.029212400026153773,
+        "iterator_skip_time_sec": 0.002878399973269552
+      },
+      "resume_2_to_3_to_5": {
+        "pass": true,
+        "epochs": 5,
+        "iterations": 20,
+        "last_weights_maxdiff": 0.0,
+        "adam_m_maxdiff": 0.0,
+        "adam_v_maxdiff": 0.0,
+        "train_loss_diff": 0.0,
+        "val_loss_diff": 0.0,
+        "restore_time_sec": 0.02770719997351989,
+        "iterator_skip_time_sec": 0.00256609998177737
+      }
+    },
+    "rec": {
+      "continuous_5_epochs": {
+        "epochs": 5,
+        "iterations": 20,
+        "train_loss": 0.08256535232067108,
+        "val_loss": 0.08289129287004471
+      },
+      "resume_2_to_5": {
+        "pass": true,
+        "epochs": 5,
+        "iterations": 20,
+        "last_weights_maxdiff": 0.0,
+        "adam_m_maxdiff": 0.0,
+        "adam_v_maxdiff": 0.0,
+        "train_loss_diff": 0.0,
+        "val_loss_diff": 0.0,
+        "restore_time_sec": 0.032658400014042854,
+        "iterator_skip_time_sec": 0.004487700003664941
+      },
+      "resume_2_to_3_to_5": {
+        "pass": true,
+        "epochs": 5,
+        "iterations": 20,
+        "last_weights_maxdiff": 0.0,
+        "adam_m_maxdiff": 0.0,
+        "adam_v_maxdiff": 0.0,
+        "train_loss_diff": 0.0,
+        "val_loss_diff": 0.0,
+        "restore_time_sec": 0.034525100025348365,
+        "iterator_skip_time_sec": 0.0035288999788463116
+      }
+    }
+  },
+  "incompatible_checkpoint_check": {
+    "refused_and_raised_exception": true,
+    "exit_code": 1,
+    "stderr_sample": "eError(err_msg)\nRuntimeError: \nCache consistency error: could not restore gym weights and/or optimizer state (Adam m/v/iterations) from checkpoint 'D:/deephedging-rewritten/results/windows_tf_verification_20261106_175449/work/incompat_test/c25b8ef033aa03be805363ce5005410ab22918a79f8fed90.pck'. Exact resume is not supported.\nRefusing to restart training silently from scratch when caching mode requested resume.\nTo explicitly start from scratch, use config.train.caching.mode = 'renew' or 'clear'.\n\n"
+  },
+  "all_pass": true
+}

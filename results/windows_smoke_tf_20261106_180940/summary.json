@@ -1,0 +1,287 @@
+{
+  "timestamp": "20261106_180940",
+  "total_duration_sec": 107.3,
+  "total_configs": 10,
+  "passed": 10,
+  "failed": 0,
+  "configurations": [
+    {
+      "notebook": "trainer-bs.ipynb",
+      "config_id": "trainer_bs_coarse",
+      "backend": "tensorflow",
+      "interpreter": "D:\\deephedging-rewritten\\.venv-tf\\Scripts\\python.exe",
+      "samples": 500,
+      "actual_epochs": 2,
+      "duration_sec": 6.07,
+      "train_loss": 0.47653865814208984,
+      "val_loss": 0.5089355111122131,
+      "is_finite": true,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "notebook": "trainer-bs.ipynb",
+      "config_id": "trainer_bs_fine",
+      "backend": "tensorflow",
+      "interpreter": "D:\\deephedging-rewritten\\.venv-tf\\Scripts\\python.exe",
+      "samples": 500,
+      "actual_epochs": 2,
+      "duration_sec": 3.63,
+      "train_loss": 0.7476335167884827,
+      "val_loss": 0.6887674331665039,
+      "is_finite": true,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "notebook": "trainer-recurrent-barrier.ipynb",
+      "config_id": "barrier_none",
+      "backend": "tensorflow",
+      "interpreter": "D:\\deephedging-rewritten\\.venv-tf\\Scripts\\python.exe",
+      "samples": 500,
+      "actual_epochs": 2,
+      "duration_sec": 10.53,
+      "train_loss": 0.007908185943961143,
+      "val_loss": 0.00833719689399004,
+      "is_finite": true,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "notebook": "trainer-recurrent-barrier.ipynb",
+      "config_id": "barrier_digital",
+      "backend": "tensorflow",
+      "interpreter": "D:\\deephedging-rewritten\\.venv-tf\\Scripts\\python.exe",
+      "samples": 500,
+      "actual_epochs": 2,
+      "duration_sec": 9.31,
+      "train_loss": 0.07942527532577515,
+      "val_loss": 0.04686764255166054,
+      "is_finite": true,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "notebook": "trainer-recurrent-fwdstart.ipynb",
+      "config_id": "fwd_none",
+      "backend": "tensorflow",
+      "interpreter": "D:\\deephedging-rewritten\\.venv-tf\\Scripts\\python.exe",
+      "samples": 500,
+      "actual_epochs": 2,
+      "duration_sec": 7.87,
+      "train_loss": 0.06361358612775803,
+      "val_loss": 0.06805741786956787,
+      "is_finite": true,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "notebook": "trainer-recurrent-fwdstart.ipynb",
+      "config_id": "fwd_all_modes",
+      "backend": "tensorflow",
+      "interpreter": "D:\\deephedging-rewritten\\.venv-tf\\Scripts\\python.exe",
+      "samples": 500,
+      "actual_epochs": 2,
+      "duration_sec": 6.02,
+      "train_loss": 0.06420556455850601,
+      "val_loss": 0.06800465285778046,
+      "is_finite": true,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "notebook": "trainer-recurrent-fwdstart.ipynb",
+      "config_id": "fwd_aggr_2",
+      "backend": "tensorflow",
+      "interpreter": "D:\\deephedging-rewritten\\.venv-tf\\Scripts\\python.exe",
+      "samples": 500,
+      "actual_epochs": 2,
+      "duration_sec": 5.33,
+      "train_loss": 0.07848192006349564,
+      "val_loss": 0.08352331072092056,
+      "is_finite": true,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "notebook": "trainer-recurrent-fwdstart.ipynb",
+      "config_id": "fwd_aggr_5bnd",
+      "backend": "tensorflow",
+      "interpreter": "D:\\deephedging-rewritten\\.venv-tf\\Scripts\\python.exe",
+      "samples": 500,
+      "actual_epochs": 2,
+      "duration_sec": 5.47,
+      "train_loss": 0.07008473575115204,
+      "val_loss": 0.07554364204406738,
+      "is_finite": true,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "notebook": "trainer-recurrent-fwdstart.ipynb",
+      "config_id": "fwd_aggr_5",
+      "backend": "tensorflow",
+      "interpreter": "D:\\deephedging-rewritten\\.venv-tf\\Scripts\\python.exe",
+      "samples": 500,
+      "actual_epochs": 2,
+      "duration_sec": 5.76,
+      "train_loss": 0.06135912239551544,
+      "val_loss": 0.06485138833522797,
+      "is_finite": true,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "notebook": "trainer-recurrent-fwdstart.ipynb",
+      "config_id": "fwd_past_repr",
+      "backend": "tensorflow",
+      "interpreter": "D:\\deephedging-rewritten\\.venv-tf\\Scripts\\python.exe",
+      "samples": 500,
+      "actual_epochs": 2,
+      "duration_sec": 5.29,
+      "train_loss": 0.061057403683662415,
+      "val_loss": 0.06295178085565567,
+      "is_finite": true,
+      "status": "PASS",
+      "error": ""
+    }
+  ],
+  "notebook_results": [
+    {
+      "notebook": "trainer-bs.ipynb",
+      "backend": "tensorflow",
+      "kernel": "dh-rewritten-tf",
+      "interpreter": "D:\\deephedging-rewritten\\.venv-tf\\Scripts\\python.exe",
+      "duration_sec": 24.27,
+      "expected_configs": [
+        "trainer_bs_coarse",
+        "trainer_bs_fine"
+      ],
+      "config_results": {
+        "trainer_bs_coarse": {
+          "id": "trainer_bs_coarse",
+          "samples": 500,
+          "epochs": 2,
+          "train_loss": 0.47653865814208984,
+          "val_loss": 0.5089355111122131,
+          "is_finite": true,
+          "cell_duration_sec": 6.07
+        },
+        "trainer_bs_fine": {
+          "id": "trainer_bs_fine",
+          "samples": 500,
+          "epochs": 2,
+          "train_loss": 0.7476335167884827,
+          "val_loss": 0.6887674331665039,
+          "is_finite": true,
+          "cell_duration_sec": 3.63
+        }
+      },
+      "error": null
+    },
+    {
+      "notebook": "trainer-recurrent-barrier.ipynb",
+      "backend": "tensorflow",
+      "kernel": "dh-rewritten-tf",
+      "interpreter": "D:\\deephedging-rewritten\\.venv-tf\\Scripts\\python.exe",
+      "duration_sec": 33.38,
+      "expected_configs": [
+        "barrier_none",
+        "barrier_digital"
+      ],
+      "config_results": {
+        "barrier_none": {
+          "id": "barrier_none",
+          "samples": 500,
+          "epochs": 2,
+          "train_loss": 0.007908185943961143,
+          "val_loss": 0.00833719689399004,
+          "is_finite": true,
+          "cell_duration_sec": 10.53
+        },
+        "barrier_digital": {
+          "id": "barrier_digital",
+          "samples": 500,
+          "epochs": 2,
+          "train_loss": 0.07942527532577515,
+          "val_loss": 0.04686764255166054,
+          "is_finite": true,
+          "cell_duration_sec": 9.31
+        }
+      },
+      "error": null
+    },
+    {
+      "notebook": "trainer-recurrent-fwdstart.ipynb",
+      "backend": "tensorflow",
+      "kernel": "dh-rewritten-tf",
+      "interpreter": "D:\\deephedging-rewritten\\.venv-tf\\Scripts\\python.exe",
+      "duration_sec": 49.57,
+      "expected_configs": [
+        "fwd_none",
+        "fwd_all_modes",
+        "fwd_aggr_2",
+        "fwd_aggr_5bnd",
+        "fwd_aggr_5",
+        "fwd_past_repr"
+      ],
+      "config_results": {
+        "fwd_none": {
+          "id": "fwd_none",
+          "samples": 500,
+          "epochs": 2,
+          "train_loss": 0.06361358612775803,
+          "val_loss": 0.06805741786956787,
+          "is_finite": true,
+          "cell_duration_sec": 7.87
+        },
+        "fwd_all_modes": {
+          "id": "fwd_all_modes",
+          "samples": 500,
+          "epochs": 2,
+          "train_loss": 0.06420556455850601,
+          "val_loss": 0.06800465285778046,
+          "is_finite": true,
+          "cell_duration_sec": 6.02
+        },
+        "fwd_aggr_2": {
+          "id": "fwd_aggr_2",
+          "samples": 500,
+          "epochs": 2,
+          "train_loss": 0.07848192006349564,
+          "val_loss": 0.08352331072092056,
+          "is_finite": true,
+          "cell_duration_sec": 5.33
+        },
+        "fwd_aggr_5bnd": {
+          "id": "fwd_aggr_5bnd",
+          "samples": 500,
+          "epochs": 2,
+          "train_loss": 0.07008473575115204,
+          "val_loss": 0.07554364204406738,
+          "is_finite": true,
+          "cell_duration_sec": 5.47
+        },
+        "fwd_aggr_5": {
+          "id": "fwd_aggr_5",
+          "samples": 500,
+          "epochs": 2,
+          "train_loss": 0.06135912239551544,
+          "val_loss": 0.06485138833522797,
+          "is_finite": true,
+          "cell_duration_sec": 5.76
+        },
+        "fwd_past_repr": {
+          "id": "fwd_past_repr",
+          "samples": 500,
+          "epochs": 2,
+          "train_loss": 0.061057403683662415,
+          "val_loss": 0.06295178085565567,
+          "is_finite": true,
+          "cell_duration_sec": 5.29
+        }
+      },
+      "error": null
+    }
+  ]
+}

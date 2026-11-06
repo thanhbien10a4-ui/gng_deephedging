@@ -1,0 +1,38 @@
+[2026-11-06 18:09:43] Starting execution of trainer-bs.ipynb
+[2026-11-06 18:09:43] Backend: tensorflow | Kernel: dh-rewritten-tf
+[2026-11-06 18:09:43] DH_MODE=smoke | DH_CHECKPOINTS=D:\deephedging-rewritten\results\windows_smoke_tf_20261106_180940\isolated_checkpoints
+[2026-11-06 18:09:46] Kernel initialized successfully. Total cells to execute: 8
+[2026-11-06 18:09:46] Executing Code Cell 1: import os...
+[2026-11-06 18:09:52] Cell 1 completed in 5.66s
+[2026-11-06 18:09:52]   [stdout] WARNING:tensorflow:From D:\deephedging-rewritten\.venv-tf\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+[2026-11-06 18:09:52]   [stdout] Python: D:\deephedging-rewritten\.venv-tf\Scripts\python.exe
+[2026-11-06 18:09:52]   [stdout] TensorFlow: 2.15.1
+[2026-11-06 18:09:52]   [stdout] Mode: smoke
+[2026-11-06 18:09:52] Executing Code Cell 2: import os, sys...
+[2026-11-06 18:09:56] Cell 2 completed in 3.77s
+[2026-11-06 18:09:56]   [stdout] Tensorflow version 2.15.1 running on 1 CPUs and 0 GPUs
+[2026-11-06 18:09:56]   [stdout] WARNING:tensorflow:From D:\deephedging-rewritten\.venv-tf\lib\site-packages\tensorflow_probability\python\internal\backend\numpy\_utils.py:48: The name tf.logging.TaskLevelStatusMessage is deprecated. Please use tf.compat.v1.logging.TaskLevelStatusMessage instead.
+[2026-11-06 18:09:56]   [stdout] WARNING:tensorflow:From D:\deephedging-rewritten\.venv-tf\lib\site-packages\tensorflow_probability\python\internal\backend\numpy\_utils.py:48: The name tf.logging.TaskLevelStatusMessage is deprecated. Please use tf.compat.v1.logging.TaskLevelStatusMessage instead.
+[2026-11-06 18:09:56]   [stdout] WARNING:tensorflow:From D:\deephedging-rewritten\.venv-tf\lib\site-packages\tensorflow_probability\python\internal\backend\numpy\_utils.py:48: The name tf.control_flow_v2_enabled is deprecated. Please use tf.compat.v1.control_flow_v2_enabled instead.
+[2026-11-06 18:09:56]   [stdout] WARNING:tensorflow:From D:\deephedging-rewritten\.venv-tf\lib\site-packages\tensorflow_probability\python\internal\backend\numpy\_utils.py:48: The name tf.control_flow_v2_enabled is deprecated. Please use tf.compat.v1.control_flow_v2_enabled instead.
+[2026-11-06 18:09:56]   [stdout] trainer-bs.ipynb (TF) initialized | Mode: smoke
+[2026-11-06 18:09:56] Executing Code Cell 4: cfg_coarse = get_config("trainer_bs_coarse", mode=MODE)...
+[2026-11-06 18:10:02] Cell 4 completed in 6.07s
+[2026-11-06 18:10:02]   [stdout] Training trainer_bs_coarse: 500 samples, 20 steps, 2 epochs...
+[2026-11-06 18:10:02]   [stdout] WARNING:tensorflow:From D:\deephedging-rewritten\.venv-tf\lib\site-packages\keras\src\backend.py:873: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+[2026-11-06 18:10:02]   [stdout] WARNING:tensorflow:From D:\deephedging-rewritten\.venv-tf\lib\site-packages\keras\src\backend.py:873: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+[2026-11-06 18:10:02]   [stdout] WARNING:tensorflow:From D:\deephedging-rewritten\.venv-tf\lib\site-packages\keras\src\optimizers\__init__.py:309: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+[2026-11-06 18:10:02]   [stdout] WARNING:tensorflow:From D:\deephedging-rewritten\.venv-tf\lib\site-packages\keras\src\optimizers\__init__.py:309: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+[2026-11-06 18:10:02]   [stdout] WARNING:tensorflow:From D:\deephedging-rewritten\.venv-tf\lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+[2026-11-06 18:10:02]   [stdout] WARNING:tensorflow:From D:\deephedging-rewritten\.venv-tf\lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+[2026-11-06 18:10:02]   [stdout] Finished trainer_bs_coarse training.
+[2026-11-06 18:10:02]   -> Querying kernel for configuration metrics...
+[2026-11-06 18:10:02]   [METRIC] Config 'trainer_bs_coarse': samples=500, epochs=2, train_loss=0.476539, val_loss=0.508936, finite=True
+[2026-11-06 18:10:02] Executing Code Cell 6: cfg_fine = get_config("trainer_bs_fine", mode=MODE)...
+[2026-11-06 18:10:05] Cell 6 completed in 3.63s
+[2026-11-06 18:10:05]   [stdout] Training trainer_bs_fine: 500 samples, 100 steps, 2 epochs...
+[2026-11-06 18:10:05]   [stdout] Finished trainer_bs_fine training.
+[2026-11-06 18:10:05]   -> Querying kernel for configuration metrics...
+[2026-11-06 18:10:05]   [METRIC] Config 'trainer_bs_fine': samples=500, epochs=2, train_loss=0.747634, val_loss=0.688767, finite=True
+[2026-11-06 18:10:07] Notebook trainer-bs.ipynb finished in 24.27s. Captured 2/2 configs.
+[2026-11-06 18:10:07] Saved executed notebook to: D:\deephedging-rewritten\results\windows_smoke_tf_20261106_180940\executed_notebooks\trainer-bs.ipynb

@@ -1,0 +1,81 @@
+{
+  "timestamp": "20261106_165611",
+  "system": "Windows 11 CPU",
+  "interpreters": {
+    "jax": "C:\\Users\\Hi Windows 11 Home\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "tensorflow": "D:\\deephedging-rewritten\\.venv-tf\\Scripts\\python.exe"
+  },
+  "verdicts": {
+    "parity_jax": {
+      "status": "PASS",
+      "config_tested": "bs_base (Black-Scholes ATM Call Feedforward)",
+      "untested_configs_count": 13,
+      "metrics": {
+        "spot_path_max_abs_diff": 0.0,
+        "rollout_actions_max_abs_diff": 0.0,
+        "initial_loss_rel_diff": 0.0,
+        "one_adam_step_param_max_abs_diff": 0.0
+      }
+    },
+    "parity_tf": {
+      "status": "PASS",
+      "config_tested": "trainer_bs_coarse (Black-Scholes ATM Call Feedforward)",
+      "untested_configs_count": 9,
+      "metrics": {
+        "spot_path_max_abs_diff": 0.0,
+        "rollout_actions_max_abs_diff": 0.0,
+        "initial_loss_rel_diff": 0.0,
+        "gradients_max_abs_diff": 0.0,
+        "one_adam_step_param_max_abs_diff": 0.0
+      }
+    },
+    "warmup_jax": {
+      "status": "PASS",
+      "weight_drift": 0.0,
+      "optimizer_step": 0
+    },
+    "warmup_tf": {
+      "status": "PASS",
+      "weight_drift": 0.0
+    },
+    "resume_fresh_process_jax": {
+      "status": "PASS",
+      "max_best_weight_abs_diff": 0.0,
+      "max_last_weight_abs_diff": 0.0,
+      "epoch_2_train_loss_diff": 0.0,
+      "epoch_2_val_loss_diff": 0.0,
+      "best_epoch_match": true
+    },
+    "resume_fresh_process_tf": {
+      "status": "FAIL",
+      "max_weight_abs_diff": 0.0020378924,
+      "threshold": 0.00001,
+      "root_cause": "dh_tf/gym.py line 371 early return skips optimizer state restoration upon cache load, resetting Adam momentum m and v buffers in fresh process"
+    }
+  },
+  "smoke_audit": {
+    "american_digital_time_type": "group_cell_time (37.25s for all 5 configs combined)",
+    "american_digital_actual_train_times": {
+      "am_dig_none": 2.51,
+      "am_dig_digital": 2.50,
+      "am_dig_standard": 2.34,
+      "am_dig_mix_relu": 2.51,
+      "am_dig_mix_softplus": 3.11
+    },
+    "smalldt_time_type": "group_cell_time (13.76s for both configs combined)",
+    "smalldt_actual_train_times": {
+      "barrier_sdt_none": 1.79,
+      "barrier_sdt_digital": 2.17
+    },
+    "val_samples": {
+      "jax_trainer": 50,
+      "jax_blackscholes": 50,
+      "jax_american_digital": 250,
+      "jax_barrier_smalldt": 250,
+      "tf_trainer_bs": 250,
+      "tf_barrier": 250,
+      "tf_fwdstart": 250
+    },
+    "test_samples_status": "Chưa đo (Out-of-sample test set not evaluated in smoke mode)"
+  }
+}

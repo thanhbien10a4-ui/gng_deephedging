@@ -1,0 +1,25 @@
+[2026-11-06 16:41:09] Starting execution of trainer-recurrent-barrier_smalldt.ipynb
+[2026-11-06 16:41:09] Backend: jax | Kernel: dh-rewritten-jax
+[2026-11-06 16:41:09] DH_MODE=smoke | DH_CHECKPOINTS=D:\deephedging-rewritten\results\windows_smoke_20261106_163915\isolated_checkpoints
+[2026-11-06 16:41:11] Kernel initialized successfully. Total cells to execute: 9
+[2026-11-06 16:41:11] Executing Code Cell 1: import os, sys, math...
+[2026-11-06 16:41:13] Cell 1 completed in 2.46s
+[2026-11-06 16:41:13]   [stdout] trainer-recurrent-barrier_smalldt.ipynb initialized | Mode: smoke
+[2026-11-06 16:41:13] Executing Code Cell 3: strike = 1.0...
+[2026-11-06 16:41:13] Cell 3 completed in 0.02s
+[2026-11-06 16:41:13]   [stdout] Simulating Barrier World: 500 samples, 20 steps...
+[2026-11-06 16:41:13] Executing Code Cell 5: agent_base = AgentConfig(...
+[2026-11-06 16:41:27] Cell 5 completed in 13.76s
+[2026-11-06 16:41:27]   [stdout] --- Training Barrier Small-dt: none (epochs=2) ---
+[2026-11-06 16:41:27]   [stdout] epoch 1/2: loss 0.01112 val 0.01023 best@1 (1.70s)
+[2026-11-06 16:41:27]   [stdout] epoch 2/2: loss 0.02835 val 0.02807 best@1 (0.09s)
+[2026-11-06 16:41:27]   [stdout] --- Training Barrier Small-dt: digital (epochs=2) ---
+[2026-11-06 16:41:27]   [stdout] epoch 1/2: loss 0.01863 val 0.01808 best@1 (2.07s)
+[2026-11-06 16:41:27]   [stdout] epoch 2/2: loss 0.00656 val 0.00554 best@2 (0.10s)
+[2026-11-06 16:41:27]   -> Querying kernel for configuration metrics...
+[2026-11-06 16:41:27]   [METRIC] Config 'barrier_sdt_none': samples=500, epochs=2, train_loss=0.028354, val_loss=0.028065, finite=True
+[2026-11-06 16:41:27]   [METRIC] Config 'barrier_sdt_digital': samples=500, epochs=2, train_loss=0.006560, val_loss=0.005541, finite=True
+[2026-11-06 16:41:27] Executing Code Cell 7: try:...
+[2026-11-06 16:41:27] Cell 7 completed in 0.23s
+[2026-11-06 16:41:28] Notebook trainer-recurrent-barrier_smalldt.ipynb finished in 19.16s. Captured 2/2 configs.
+[2026-11-06 16:41:28] Saved executed notebook to: D:\deephedging-rewritten\results\windows_smoke_20261106_163915\executed_notebooks\trainer-recurrent-barrier_smalldt.ipynb

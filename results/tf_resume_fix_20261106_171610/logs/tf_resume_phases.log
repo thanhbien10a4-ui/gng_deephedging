@@ -1,0 +1,369 @@
+
+### phase ff 2 32 D:\deephedging-rewritten\results\tf_resume_fix_20261106_171610\work\ff_32_A (exit 0)
+Tensorflow version 2.15.1 running on 1 CPUs and 0 GPUs
+Initializing training at 2026-11-06 17:43:02: gym with 164 trainable weights compiled. Took 4s
+Agent is using 162 weights: 161 for the main agent per step, 1 for initial delta.
+ Features available per time step:     action, cost, delta, ivol, lbnd_a, pnl, price, spot, sqrt_time_left, time_left and ubnd_a
+ Features used per time step:          delta, price and time_left
+ Features available for initial delta: cost, ivol, lbnd_a, price, spot, sqrt_time_left, time_left and ubnd_a
+ Features used by initial delta:       -
+Monetary utility cvar@1 is using 1 weight
+ Features available: cost, ivol, lbnd_a, price, spot, sqrt_time_left, time_left and ubnd_a
+ Features used:      -
+Caching enabled @ 'D:/deephedging-rewritten/results/tf_resume_fix_20261106_171610/work/ff_32_A/c25b8ef033aa03be805363ce5005410ab22918a79f8fed90.pck'
+Training monitor initialized. Took 0s
+Deep Hedging Engine: first of 2 epochs for training 164 weights over 100 samples with 50 validation samples started. This training run took 0s so far. Now compiling graph ...       
+[2K                                                                                                                                                                                                         
+
+[2KTraining 1/2 epochs; 164 weights; 100 samples; 50 validation samples batch size 32 | initial loss 0.0901197 (0.0120126), training 0.0827958 (0.0109356), best 0.0827958 (0.0120126), batch 0.0893397, val 0.0828853 (0.0136813); best epoch 1, last cached 1 | memory used: rss 515.688M, vms 1428.45M | time elapsed 4s; time per epoch 4s; estimated time remaining 4s | current time: 2026-11-06 17:43:07, estimated end time: 2026-11-06 17:43:11                        
+[2KTraining 2/2 epochs; 164 weights; 100 samples; 50 validation samples batch size 32 | initial loss 0.0901197 (0.0120126), training 0.0845556 (0.00908997), best 0.0827958 (0.0120126), batch 0.083332, val 0.0842984 (0.0111782); best epoch 1, last cached 2 | memory used: rss 516.062M, vms 1428.75M | time elapsed 4s; time per epoch 2s; estimated time remaining 0s | current time: 2026-11-06 17:43:07                        
+[2K                                                                                                                                                                                                        
+[2KTraining 2/2 epochs; 164 weights; 100 samples; 50 validation samples batch size 32 | initial loss 0.0901197 (0.0120126), training 0.0845556 (0.00908997), best 0.0827958 (0.0120126), batch 0.083332, val 0.0842984 (0.0111782); best epoch 1, last cached 2 | memory used: rss 516.062M, vms 1428.75M | time elapsed 4s; time per epoch 2s; estimated time remaining 0s | current time: 2026-11-06 17:43:07                        
+ Status: Training complete.
+ Weights set to best epoch: 1
+ State of training until epoch 2 cached into D:/deephedging-rewritten/results/tf_resume_fix_20261106_171610/work/ff_32_A/c25b8ef033aa03be805363ce5005410ab22918a79f8fed90.pck
+ Time: 2026-11-06 17:43:07
+Training terminated. Total time taken 5s
+IS_RECURRENT False
+
+--- stderr ---
+
+
+### phase ff 1 32 D:\deephedging-rewritten\results\tf_resume_fix_20261106_171610\work\ff_32_B (exit 0)
+Tensorflow version 2.15.1 running on 1 CPUs and 0 GPUs
+Initializing training at 2026-11-06 17:43:27: gym with 164 trainable weights compiled. Took 4s
+Agent is using 162 weights: 161 for the main agent per step, 1 for initial delta.
+ Features available per time step:     action, cost, delta, ivol, lbnd_a, pnl, price, spot, sqrt_time_left, time_left and ubnd_a
+ Features used per time step:          delta, price and time_left
+ Features available for initial delta: cost, ivol, lbnd_a, price, spot, sqrt_time_left, time_left and ubnd_a
+ Features used by initial delta:       -
+Monetary utility cvar@1 is using 1 weight
+ Features available: cost, ivol, lbnd_a, price, spot, sqrt_time_left, time_left and ubnd_a
+ Features used:      -
+Caching enabled @ 'D:/deephedging-rewritten/results/tf_resume_fix_20261106_171610/work/ff_32_B/c25b8ef033aa03be805363ce5005410ab22918a79f8fed90.pck'
+Training monitor initialized. Took 0s
+Deep Hedging Engine: first of 1 epochs for training 164 weights over 100 samples with 50 validation samples started. This training run took 0s so far. Now compiling graph ...       
+[2K                                                                                                                                                                                                         
+
+[2KTraining 1/1 epochs; 164 weights; 100 samples; 50 validation samples batch size 32 | initial loss 0.0901197 (0.0120126), training 0.0827958 (0.0109356), best 0.0827958 (0.0120126), batch 0.0893397, val 0.0828853 (0.0136813); best epoch 1, last cached 1 | memory used: rss 520.977M, vms 1433.05M | time elapsed 5s; time per epoch 5s; estimated time remaining 0s | current time: 2026-11-06 17:43:33                        
+[2K                                                                                                                                                                                                        
+[2KTraining 1/1 epochs; 164 weights; 100 samples; 50 validation samples batch size 32 | initial loss 0.0901197 (0.0120126), training 0.0827958 (0.0109356), best 0.0827958 (0.0120126), batch 0.0893397, val 0.0828853 (0.0136813); best epoch 1, last cached 1 | memory used: rss 520.977M, vms 1433.05M | time elapsed 5s; time per epoch 5s; estimated time remaining 0s | current time: 2026-11-06 17:43:33                        
+ Status: Training complete.
+ Weights set to best epoch: 1
+ State of training until epoch 1 cached into D:/deephedging-rewritten/results/tf_resume_fix_20261106_171610/work/ff_32_B/c25b8ef033aa03be805363ce5005410ab22918a79f8fed90.pck
+ Time: 2026-11-06 17:43:33
+Training terminated. Total time taken 5s
+IS_RECURRENT False
+
+--- stderr ---
+
+
+### phase ff 2 32 D:\deephedging-rewritten\results\tf_resume_fix_20261106_171610\work\ff_32_B (exit 0)
+Tensorflow version 2.15.1 running on 1 CPUs and 0 GPUs
+Initializing training at 2026-11-06 17:43:58: gym with 164 trainable weights compiled. Took 2s
+Agent is using 162 weights: 161 for the main agent per step, 1 for initial delta.
+ Features available per time step:     action, cost, delta, ivol, lbnd_a, pnl, price, spot, sqrt_time_left, time_left and ubnd_a
+ Features used per time step:          delta, price and time_left
+ Features available for initial delta: cost, ivol, lbnd_a, price, spot, sqrt_time_left, time_left and ubnd_a
+ Features used by initial delta:       -
+Monetary utility cvar@1 is using 1 weight
+ Features available: cost, ivol, lbnd_a, price, spot, sqrt_time_left, time_left and ubnd_a
+ Features used:      -
+Caching enabled @ 'D:/deephedging-rewritten/results/tf_resume_fix_20261106_171610/work/ff_32_B/c25b8ef033aa03be805363ce5005410ab22918a79f8fed90.pck'
+Cache successfully loaded. Current epoch: 1
+Training monitor initialized. Took 0s
+
+[2KTraining 2/2 epochs; 164 weights; 100 samples; 50 validation samples batch size 32 | initial loss 0.0901197 (0.0120126), training 0.0845556 (0.00908997), best 0.0827958 (0.0120126), batch 0.083332, val 0.0842984 (0.0111782); best epoch 1, last cached 2 | memory used: rss 520.473M, vms 1433.81M | time elapsed 8s; time per epoch 4s; estimated time remaining 0s | current time: 2026-11-06 17:44:02                        
+[2K                                                                                                                                                                                                        
+[2KTraining 2/2 epochs; 164 weights; 100 samples; 50 validation samples batch size 32 | initial loss 0.0901197 (0.0120126), training 0.0845556 (0.00908997), best 0.0827958 (0.0120126), batch 0.083332, val 0.0842984 (0.0111782); best epoch 1, last cached 2 | memory used: rss 520.473M, vms 1433.81M | time elapsed 8s; time per epoch 4s; estimated time remaining 0s | current time: 2026-11-06 17:44:02                        
+ Status: Training complete.
+ Weights set to best epoch: 1
+ State of training until epoch 2 cached into D:/deephedging-rewritten/results/tf_resume_fix_20261106_171610/work/ff_32_B/c25b8ef033aa03be805363ce5005410ab22918a79f8fed90.pck
+ Time: 2026-11-06 17:44:02
+Training terminated. Total time taken 3s
+IS_RECURRENT False
+
+--- stderr ---
+
+
+### phase ff 2 100 D:\deephedging-rewritten\results\tf_resume_fix_20261106_171610\work\ff_100_A (exit 0)
+Tensorflow version 2.15.1 running on 1 CPUs and 0 GPUs
+Initializing training at 2026-11-06 17:44:18: gym with 164 trainable weights compiled. Took 2s
+Agent is using 162 weights: 161 for the main agent per step, 1 for initial delta.
+ Features available per time step:     action, cost, delta, ivol, lbnd_a, pnl, price, spot, sqrt_time_left, time_left and ubnd_a
+ Features used per time step:          delta, price and time_left
+ Features available for initial delta: cost, ivol, lbnd_a, price, spot, sqrt_time_left, time_left and ubnd_a
+ Features used by initial delta:       -
+Monetary utility cvar@1 is using 1 weight
+ Features available: cost, ivol, lbnd_a, price, spot, sqrt_time_left, time_left and ubnd_a
+ Features used:      -
+Caching enabled @ 'D:/deephedging-rewritten/results/tf_resume_fix_20261106_171610/work/ff_100_A/c25b8ef033aa03be805363ce5005410ab22918a79f8fed90.pck'
+Training monitor initialized. Took 0s
+Deep Hedging Engine: first of 2 epochs for training 164 weights over 100 samples with 50 validation samples started. This training run took 0s so far. Now compiling graph ...       
+[2K                                                                                                                                                                                                         
+
+[2KTraining 1/2 epochs; 164 weights; 100 samples; 50 validation samples batch size 100 | initial loss 0.0901197 (0.0120126), training 0.0910077 (0.012893), best 0.0901197 (0.0120126), batch 0.0901197, val 0.0906699 (0.0165323); best epoch 0, last cached 1 | memory used: rss 499.125M, vms 1400.43M | time elapsed 3s; time per epoch 3s; estimated time remaining 3s | current time: 2026-11-06 17:44:22, estimated end time: 2026-11-06 17:44:26                        
+[2KTraining 2/2 epochs; 164 weights; 100 samples; 50 validation samples batch size 100 | initial loss 0.0901197 (0.0120126), training 0.0849889 (0.0121296), best 0.0849889 (0.0120126), batch 0.0910077, val 0.0851175 (0.0154141); best epoch 2, last cached 2 | memory used: rss 499.902M, vms 1401.17M | time elapsed 4s; time per epoch 2s; estimated time remaining 0s | current time: 2026-11-06 17:44:22                        
+[2K                                                                                                                                                                                                        
+[2KTraining 2/2 epochs; 164 weights; 100 samples; 50 validation samples batch size 100 | initial loss 0.0901197 (0.0120126), training 0.0849889 (0.0121296), best 0.0849889 (0.0120126), batch 0.0910077, val 0.0851175 (0.0154141); best epoch 2, last cached 2 | memory used: rss 499.902M, vms 1401.17M | time elapsed 4s; time per epoch 2s; estimated time remaining 0s | current time: 2026-11-06 17:44:22                        
+ Status: Training complete.
+ Weights set to best epoch: 2
+ State of training until epoch 2 cached into D:/deephedging-rewritten/results/tf_resume_fix_20261106_171610/work/ff_100_A/c25b8ef033aa03be805363ce5005410ab22918a79f8fed90.pck
+ Time: 2026-11-06 17:44:22
+Training terminated. Total time taken 4s
+IS_RECURRENT False
+
+--- stderr ---
+
+
+### phase ff 1 100 D:\deephedging-rewritten\results\tf_resume_fix_20261106_171610\work\ff_100_B (exit 0)
+Tensorflow version 2.15.1 running on 1 CPUs and 0 GPUs
+Initializing training at 2026-11-06 17:44:42: gym with 164 trainable weights compiled. Took 4s
+Agent is using 162 weights: 161 for the main agent per step, 1 for initial delta.
+ Features available per time step:     action, cost, delta, ivol, lbnd_a, pnl, price, spot, sqrt_time_left, time_left and ubnd_a
+ Features used per time step:          delta, price and time_left
+ Features available for initial delta: cost, ivol, lbnd_a, price, spot, sqrt_time_left, time_left and ubnd_a
+ Features used by initial delta:       -
+Monetary utility cvar@1 is using 1 weight
+ Features available: cost, ivol, lbnd_a, price, spot, sqrt_time_left, time_left and ubnd_a
+ Features used:      -
+Caching enabled @ 'D:/deephedging-rewritten/results/tf_resume_fix_20261106_171610/work/ff_100_B/c25b8ef033aa03be805363ce5005410ab22918a79f8fed90.pck'
+Training monitor initialized. Took 0s
+Deep Hedging Engine: first of 1 epochs for training 164 weights over 100 samples with 50 validation samples started. This training run took 0s so far. Now compiling graph ...       
+[2K                                                                                                                                                                                                         
+
+[2KTraining 1/1 epochs; 164 weights; 100 samples; 50 validation samples batch size 100 | initial loss 0.0901197 (0.0120126), training 0.0910077 (0.012893), best 0.0901197 (0.0120126), batch 0.0901197, val 0.0906699 (0.0165323); best epoch 0, last cached 1 | memory used: rss 499.855M, vms 1400.54M | time elapsed 3s; time per epoch 3s; estimated time remaining 0s | current time: 2026-11-06 17:44:46                        
+[2K                                                                                                                                                                                                        
+[2KTraining 1/1 epochs; 164 weights; 100 samples; 50 validation samples batch size 100 | initial loss 0.0901197 (0.0120126), training 0.0910077 (0.012893), best 0.0901197 (0.0120126), batch 0.0901197, val 0.0906699 (0.0165323); best epoch 0, last cached 1 | memory used: rss 499.855M, vms 1400.54M | time elapsed 3s; time per epoch 3s; estimated time remaining 0s | current time: 2026-11-06 17:44:46                        
+ Status: Training complete.
+ Weights set to best epoch: 0
+ State of training until epoch 1 cached into D:/deephedging-rewritten/results/tf_resume_fix_20261106_171610/work/ff_100_B/c25b8ef033aa03be805363ce5005410ab22918a79f8fed90.pck
+ Time: 2026-11-06 17:44:46
+Training terminated. Total time taken 4s
+IS_RECURRENT False
+
+--- stderr ---
+
+
+### phase ff 2 100 D:\deephedging-rewritten\results\tf_resume_fix_20261106_171610\work\ff_100_B (exit 0)
+Tensorflow version 2.15.1 running on 1 CPUs and 0 GPUs
+Initializing training at 2026-11-06 17:45:03: gym with 164 trainable weights compiled. Took 3s
+Agent is using 162 weights: 161 for the main agent per step, 1 for initial delta.
+ Features available per time step:     action, cost, delta, ivol, lbnd_a, pnl, price, spot, sqrt_time_left, time_left and ubnd_a
+ Features used per time step:          delta, price and time_left
+ Features available for initial delta: cost, ivol, lbnd_a, price, spot, sqrt_time_left, time_left and ubnd_a
+ Features used by initial delta:       -
+Monetary utility cvar@1 is using 1 weight
+ Features available: cost, ivol, lbnd_a, price, spot, sqrt_time_left, time_left and ubnd_a
+ Features used:      -
+Caching enabled @ 'D:/deephedging-rewritten/results/tf_resume_fix_20261106_171610/work/ff_100_B/c25b8ef033aa03be805363ce5005410ab22918a79f8fed90.pck'
+Cache successfully loaded. Current epoch: 1
+Training monitor initialized. Took 0s
+
+[2KTraining 2/2 epochs; 164 weights; 100 samples; 50 validation samples batch size 100 | initial loss 0.0901197 (0.0120126), training 0.0849889 (0.0121296), best 0.0849889 (0.0120126), batch 0.0910077, val 0.0851175 (0.0154141); best epoch 2, last cached 2 | memory used: rss 495.688M, vms 1396.9M | time elapsed 6s; time per epoch 3s; estimated time remaining 0s | current time: 2026-11-06 17:45:07                        
+[2K                                                                                                                                                                                                        
+[2KTraining 2/2 epochs; 164 weights; 100 samples; 50 validation samples batch size 100 | initial loss 0.0901197 (0.0120126), training 0.0849889 (0.0121296), best 0.0849889 (0.0120126), batch 0.0910077, val 0.0851175 (0.0154141); best epoch 2, last cached 2 | memory used: rss 495.688M, vms 1396.9M | time elapsed 6s; time per epoch 3s; estimated time remaining 0s | current time: 2026-11-06 17:45:07                        
+ Status: Training complete.
+ Weights set to best epoch: 2
+ State of training until epoch 2 cached into D:/deephedging-rewritten/results/tf_resume_fix_20261106_171610/work/ff_100_B/c25b8ef033aa03be805363ce5005410ab22918a79f8fed90.pck
+ Time: 2026-11-06 17:45:07
+Training terminated. Total time taken 3s
+IS_RECURRENT False
+
+--- stderr ---
+
+
+### phase rec 2 32 D:\deephedging-rewritten\results\tf_resume_fix_20261106_171610\work\rec_32_A (exit 0)
+Tensorflow version 2.15.1 running on 1 CPUs and 0 GPUs
+Initializing training at 2026-11-06 17:45:23: gym with 186 trainable weights compiled. Took 3s
+Agent is using 184 weights: 182 for the main agent per step, 1 for initial delta, 1 for initial states.
+ Features available per time step:     action, cost, delta, ivol, lbnd_a, pnl, price, recurrent_state, spot, sqrt_time_left, time_left and ubnd_a
+ Features used per time step:          delta, price, recurrent_state and time_left
+ Features available for initial delta: cost, ivol, lbnd_a, price, spot, sqrt_time_left, time_left and ubnd_a
+ Features used by initial delta:       -
+ Features available for initial state: cost, ivol, lbnd_a, price, spot, sqrt_time_left, time_left and ubnd_a
+ Features used by initial state:       -
+Monetary utility cvar@1 is using 1 weight
+ Features available: cost, ivol, lbnd_a, price, spot, sqrt_time_left, time_left and ubnd_a
+ Features used:      -
+Caching enabled @ 'D:/deephedging-rewritten/results/tf_resume_fix_20261106_171610/work/rec_32_A/17602650def14669db7de51e0485ea3f04226bb586f83539.pck'
+Training monitor initialized. Took 0s
+Deep Hedging Engine: first of 2 epochs for training 186 weights over 100 samples with 50 validation samples started. This training run took 0s so far. Now compiling graph ...       
+[2K                                                                                                                                                                                                         
+
+[2KTraining 1/2 epochs; 186 weights; 100 samples; 50 validation samples batch size 32 | initial loss 0.0900718 (0.0117728), training 0.0823938 (0.0106393), best 0.0823938 (0.0117728), batch 0.0891532, val 0.0824834 (0.0133289); best epoch 1, last cached 1 | memory used: rss 526.203M, vms 1435.66M | time elapsed 3s; time per epoch 3s; estimated time remaining 3s | current time: 2026-11-06 17:45:28, estimated end time: 2026-11-06 17:45:31                        
+[2KTraining 2/2 epochs; 186 weights; 100 samples; 50 validation samples batch size 32 | initial loss 0.0900718 (0.0117728), training 0.0841238 (0.00892033), best 0.0823938 (0.0117728), batch 0.0829572, val 0.0838858 (0.0109673); best epoch 1, last cached 2 | memory used: rss 526.758M, vms 1436.12M | time elapsed 4s; time per epoch 2s; estimated time remaining 0s | current time: 2026-11-06 17:45:28                        
+[2K                                                                                                                                                                                                        
+[2KTraining 2/2 epochs; 186 weights; 100 samples; 50 validation samples batch size 32 | initial loss 0.0900718 (0.0117728), training 0.0841238 (0.00892033), best 0.0823938 (0.0117728), batch 0.0829572, val 0.0838858 (0.0109673); best epoch 1, last cached 2 | memory used: rss 526.758M, vms 1436.12M | time elapsed 4s; time per epoch 2s; estimated time remaining 0s | current time: 2026-11-06 17:45:28                        
+ Status: Training complete.
+ Weights set to best epoch: 1
+ State of training until epoch 2 cached into D:/deephedging-rewritten/results/tf_resume_fix_20261106_171610/work/rec_32_A/17602650def14669db7de51e0485ea3f04226bb586f83539.pck
+ Time: 2026-11-06 17:45:28
+Training terminated. Total time taken 4s
+IS_RECURRENT True
+
+--- stderr ---
+
+
+### phase rec 1 32 D:\deephedging-rewritten\results\tf_resume_fix_20261106_171610\work\rec_32_B (exit 0)
+Tensorflow version 2.15.1 running on 1 CPUs and 0 GPUs
+Initializing training at 2026-11-06 17:45:44: gym with 186 trainable weights compiled. Took 3s
+Agent is using 184 weights: 182 for the main agent per step, 1 for initial delta, 1 for initial states.
+ Features available per time step:     action, cost, delta, ivol, lbnd_a, pnl, price, recurrent_state, spot, sqrt_time_left, time_left and ubnd_a
+ Features used per time step:          delta, price, recurrent_state and time_left
+ Features available for initial delta: cost, ivol, lbnd_a, price, spot, sqrt_time_left, time_left and ubnd_a
+ Features used by initial delta:       -
+ Features available for initial state: cost, ivol, lbnd_a, price, spot, sqrt_time_left, time_left and ubnd_a
+ Features used by initial state:       -
+Monetary utility cvar@1 is using 1 weight
+ Features available: cost, ivol, lbnd_a, price, spot, sqrt_time_left, time_left and ubnd_a
+ Features used:      -
+Caching enabled @ 'D:/deephedging-rewritten/results/tf_resume_fix_20261106_171610/work/rec_32_B/17602650def14669db7de51e0485ea3f04226bb586f83539.pck'
+Training monitor initialized. Took 0s
+Deep Hedging Engine: first of 1 epochs for training 186 weights over 100 samples with 50 validation samples started. This training run took 0s so far. Now compiling graph ...       
+[2K                                                                                                                                                                                                         
+
+[2KTraining 1/1 epochs; 186 weights; 100 samples; 50 validation samples batch size 32 | initial loss 0.0900718 (0.0117728), training 0.0823938 (0.0106393), best 0.0823938 (0.0117728), batch 0.0891532, val 0.0824834 (0.0133289); best epoch 1, last cached 1 | memory used: rss 524.461M, vms 1435.12M | time elapsed 4s; time per epoch 4s; estimated time remaining 0s | current time: 2026-11-06 17:45:48                        
+[2K                                                                                                                                                                                                        
+[2KTraining 1/1 epochs; 186 weights; 100 samples; 50 validation samples batch size 32 | initial loss 0.0900718 (0.0117728), training 0.0823938 (0.0106393), best 0.0823938 (0.0117728), batch 0.0891532, val 0.0824834 (0.0133289); best epoch 1, last cached 1 | memory used: rss 524.461M, vms 1435.12M | time elapsed 4s; time per epoch 4s; estimated time remaining 0s | current time: 2026-11-06 17:45:48                        
+ Status: Training complete.
+ Weights set to best epoch: 1
+ State of training until epoch 1 cached into D:/deephedging-rewritten/results/tf_resume_fix_20261106_171610/work/rec_32_B/17602650def14669db7de51e0485ea3f04226bb586f83539.pck
+ Time: 2026-11-06 17:45:48
+Training terminated. Total time taken 4s
+IS_RECURRENT True
+
+--- stderr ---
+
+
+### phase rec 2 32 D:\deephedging-rewritten\results\tf_resume_fix_20261106_171610\work\rec_32_B (exit 0)
+Tensorflow version 2.15.1 running on 1 CPUs and 0 GPUs
+Initializing training at 2026-11-06 17:46:03: gym with 186 trainable weights compiled. Took 3s
+Agent is using 184 weights: 182 for the main agent per step, 1 for initial delta, 1 for initial states.
+ Features available per time step:     action, cost, delta, ivol, lbnd_a, pnl, price, recurrent_state, spot, sqrt_time_left, time_left and ubnd_a
+ Features used per time step:          delta, price, recurrent_state and time_left
+ Features available for initial delta: cost, ivol, lbnd_a, price, spot, sqrt_time_left, time_left and ubnd_a
+ Features used by initial delta:       -
+ Features available for initial state: cost, ivol, lbnd_a, price, spot, sqrt_time_left, time_left and ubnd_a
+ Features used by initial state:       -
+Monetary utility cvar@1 is using 1 weight
+ Features available: cost, ivol, lbnd_a, price, spot, sqrt_time_left, time_left and ubnd_a
+ Features used:      -
+Caching enabled @ 'D:/deephedging-rewritten/results/tf_resume_fix_20261106_171610/work/rec_32_B/17602650def14669db7de51e0485ea3f04226bb586f83539.pck'
+Cache successfully loaded. Current epoch: 1
+Training monitor initialized. Took 0s
+
+[2KTraining 2/2 epochs; 186 weights; 100 samples; 50 validation samples batch size 32 | initial loss 0.0900718 (0.0117728), training 0.0841238 (0.00892033), best 0.0823938 (0.0117728), batch 0.0829572, val 0.0838858 (0.0109673); best epoch 1, last cached 2 | memory used: rss 524.605M, vms 1436.92M | time elapsed 8s; time per epoch 4s; estimated time remaining 0s | current time: 2026-11-06 17:46:08                        
+[2K                                                                                                                                                                                                        
+[2KTraining 2/2 epochs; 186 weights; 100 samples; 50 validation samples batch size 32 | initial loss 0.0900718 (0.0117728), training 0.0841238 (0.00892033), best 0.0823938 (0.0117728), batch 0.0829572, val 0.0838858 (0.0109673); best epoch 1, last cached 2 | memory used: rss 524.605M, vms 1436.92M | time elapsed 8s; time per epoch 4s; estimated time remaining 0s | current time: 2026-11-06 17:46:08                        
+ Status: Training complete.
+ Weights set to best epoch: 1
+ State of training until epoch 2 cached into D:/deephedging-rewritten/results/tf_resume_fix_20261106_171610/work/rec_32_B/17602650def14669db7de51e0485ea3f04226bb586f83539.pck
+ Time: 2026-11-06 17:46:08
+Training terminated. Total time taken 4s
+IS_RECURRENT True
+
+--- stderr ---
+
+
+### phase rec 2 100 D:\deephedging-rewritten\results\tf_resume_fix_20261106_171610\work\rec_100_A (exit 0)
+Tensorflow version 2.15.1 running on 1 CPUs and 0 GPUs
+Initializing training at 2026-11-06 17:46:23: gym with 186 trainable weights compiled. Took 3s
+Agent is using 184 weights: 182 for the main agent per step, 1 for initial delta, 1 for initial states.
+ Features available per time step:     action, cost, delta, ivol, lbnd_a, pnl, price, recurrent_state, spot, sqrt_time_left, time_left and ubnd_a
+ Features used per time step:          delta, price, recurrent_state and time_left
+ Features available for initial delta: cost, ivol, lbnd_a, price, spot, sqrt_time_left, time_left and ubnd_a
+ Features used by initial delta:       -
+ Features available for initial state: cost, ivol, lbnd_a, price, spot, sqrt_time_left, time_left and ubnd_a
+ Features used by initial state:       -
+Monetary utility cvar@1 is using 1 weight
+ Features available: cost, ivol, lbnd_a, price, spot, sqrt_time_left, time_left and ubnd_a
+ Features used:      -
+Caching enabled @ 'D:/deephedging-rewritten/results/tf_resume_fix_20261106_171610/work/rec_100_A/17602650def14669db7de51e0485ea3f04226bb586f83539.pck'
+Training monitor initialized. Took 0s
+Deep Hedging Engine: first of 2 epochs for training 186 weights over 100 samples with 50 validation samples started. This training run took 0s so far. Now compiling graph ...       
+[2K                                                                                                                                                                                                         
+
+[2KTraining 1/2 epochs; 186 weights; 100 samples; 50 validation samples batch size 100 | initial loss 0.0900718 (0.0117728), training 0.0909187 (0.0125439), best 0.0900718 (0.0117728), batch 0.0900718, val 0.0906016 (0.016114); best epoch 0, last cached 1 | memory used: rss 501.449M, vms 1402.72M | time elapsed 4s; time per epoch 4s; estimated time remaining 4s | current time: 2026-11-06 17:46:27, estimated end time: 2026-11-06 17:46:32                        
+[2KTraining 2/2 epochs; 186 weights; 100 samples; 50 validation samples batch size 100 | initial loss 0.0900718 (0.0117728), training 0.0847559 (0.0117751), best 0.0847559 (0.0117728), batch 0.0909187, val 0.0848541 (0.0149895); best epoch 2, last cached 2 | memory used: rss 501.957M, vms 1403.18M | time elapsed 4s; time per epoch 2s; estimated time remaining 0s | current time: 2026-11-06 17:46:27                        
+[2K                                                                                                                                                                                                        
+[2KTraining 2/2 epochs; 186 weights; 100 samples; 50 validation samples batch size 100 | initial loss 0.0900718 (0.0117728), training 0.0847559 (0.0117751), best 0.0847559 (0.0117728), batch 0.0909187, val 0.0848541 (0.0149895); best epoch 2, last cached 2 | memory used: rss 501.957M, vms 1403.18M | time elapsed 4s; time per epoch 2s; estimated time remaining 0s | current time: 2026-11-06 17:46:28                        
+ Status: Training complete.
+ Weights set to best epoch: 2
+ State of training until epoch 2 cached into D:/deephedging-rewritten/results/tf_resume_fix_20261106_171610/work/rec_100_A/17602650def14669db7de51e0485ea3f04226bb586f83539.pck
+ Time: 2026-11-06 17:46:28
+Training terminated. Total time taken 4s
+IS_RECURRENT True
+
+--- stderr ---
+
+
+### phase rec 1 100 D:\deephedging-rewritten\results\tf_resume_fix_20261106_171610\work\rec_100_B (exit 0)
+Tensorflow version 2.15.1 running on 1 CPUs and 0 GPUs
+Initializing training at 2026-11-06 17:46:43: gym with 186 trainable weights compiled. Took 3s
+Agent is using 184 weights: 182 for the main agent per step, 1 for initial delta, 1 for initial states.
+ Features available per time step:     action, cost, delta, ivol, lbnd_a, pnl, price, recurrent_state, spot, sqrt_time_left, time_left and ubnd_a
+ Features used per time step:          delta, price, recurrent_state and time_left
+ Features available for initial delta: cost, ivol, lbnd_a, price, spot, sqrt_time_left, time_left and ubnd_a
+ Features used by initial delta:       -
+ Features available for initial state: cost, ivol, lbnd_a, price, spot, sqrt_time_left, time_left and ubnd_a
+ Features used by initial state:       -
+Monetary utility cvar@1 is using 1 weight
+ Features available: cost, ivol, lbnd_a, price, spot, sqrt_time_left, time_left and ubnd_a
+ Features used:      -
+Caching enabled @ 'D:/deephedging-rewritten/results/tf_resume_fix_20261106_171610/work/rec_100_B/17602650def14669db7de51e0485ea3f04226bb586f83539.pck'
+Training monitor initialized. Took 0s
+Deep Hedging Engine: first of 1 epochs for training 186 weights over 100 samples with 50 validation samples started. This training run took 0s so far. Now compiling graph ...       
+[2K                                                                                                                                                                                                         
+
+[2KTraining 1/1 epochs; 186 weights; 100 samples; 50 validation samples batch size 100 | initial loss 0.0900718 (0.0117728), training 0.0909187 (0.0125439), best 0.0900718 (0.0117728), batch 0.0900718, val 0.0906016 (0.016114); best epoch 0, last cached 1 | memory used: rss 501.223M, vms 1402.16M | time elapsed 3s; time per epoch 3s; estimated time remaining 0s | current time: 2026-11-06 17:46:47                        
+[2K                                                                                                                                                                                                        
+[2KTraining 1/1 epochs; 186 weights; 100 samples; 50 validation samples batch size 100 | initial loss 0.0900718 (0.0117728), training 0.0909187 (0.0125439), best 0.0900718 (0.0117728), batch 0.0900718, val 0.0906016 (0.016114); best epoch 0, last cached 1 | memory used: rss 501.223M, vms 1402.16M | time elapsed 3s; time per epoch 3s; estimated time remaining 0s | current time: 2026-11-06 17:46:47                        
+ Status: Training complete.
+ Weights set to best epoch: 0
+ State of training until epoch 1 cached into D:/deephedging-rewritten/results/tf_resume_fix_20261106_171610/work/rec_100_B/17602650def14669db7de51e0485ea3f04226bb586f83539.pck
+ Time: 2026-11-06 17:46:47
+Training terminated. Total time taken 3s
+IS_RECURRENT True
+
+--- stderr ---
+
+
+### phase rec 2 100 D:\deephedging-rewritten\results\tf_resume_fix_20261106_171610\work\rec_100_B (exit 0)
+Tensorflow version 2.15.1 running on 1 CPUs and 0 GPUs
+Initializing training at 2026-11-06 17:47:02: gym with 186 trainable weights compiled. Took 3s
+Agent is using 184 weights: 182 for the main agent per step, 1 for initial delta, 1 for initial states.
+ Features available per time step:     action, cost, delta, ivol, lbnd_a, pnl, price, recurrent_state, spot, sqrt_time_left, time_left and ubnd_a
+ Features used per time step:          delta, price, recurrent_state and time_left
+ Features available for initial delta: cost, ivol, lbnd_a, price, spot, sqrt_time_left, time_left and ubnd_a
+ Features used by initial delta:       -
+ Features available for initial state: cost, ivol, lbnd_a, price, spot, sqrt_time_left, time_left and ubnd_a
+ Features used by initial state:       -
+Monetary utility cvar@1 is using 1 weight
+ Features available: cost, ivol, lbnd_a, price, spot, sqrt_time_left, time_left and ubnd_a
+ Features used:      -
+Caching enabled @ 'D:/deephedging-rewritten/results/tf_resume_fix_20261106_171610/work/rec_100_B/17602650def14669db7de51e0485ea3f04226bb586f83539.pck'
+Cache successfully loaded. Current epoch: 1
+Training monitor initialized. Took 0s
+
+[2KTraining 2/2 epochs; 186 weights; 100 samples; 50 validation samples batch size 100 | initial loss 0.0900718 (0.0117728), training 0.0847559 (0.0117751), best 0.0847559 (0.0117728), batch 0.0909187, val 0.0848541 (0.0149895); best epoch 2, last cached 2 | memory used: rss 505.043M, vms 1407.96M | time elapsed 6s; time per epoch 3s; estimated time remaining 0s | current time: 2026-11-06 17:47:06                        
+[2K                                                                                                                                                                                                        
+[2KTraining 2/2 epochs; 186 weights; 100 samples; 50 validation samples batch size 100 | initial loss 0.0900718 (0.0117728), training 0.0847559 (0.0117751), best 0.0847559 (0.0117728), batch 0.0909187, val 0.0848541 (0.0149895); best epoch 2, last cached 2 | memory used: rss 505.043M, vms 1407.96M | time elapsed 6s; time per epoch 3s; estimated time remaining 0s | current time: 2026-11-06 17:47:06                        
+ Status: Training complete.
+ Weights set to best epoch: 2
+ State of training until epoch 2 cached into D:/deephedging-rewritten/results/tf_resume_fix_20261106_171610/work/rec_100_B/17602650def14669db7de51e0485ea3f04226bb586f83539.pck
+ Time: 2026-11-06 17:47:06
+Training terminated. Total time taken 3s
+IS_RECURRENT True
+
+--- stderr ---
+
+
+### legacy D:\deephedging-rewritten\results\tf_resume_fix_20261106_171610\work\ff_32_A (exit 0)
+Tensorflow version 2.15.1 running on 1 CPUs and 0 GPUs
+LEGACY {"refused_missing_opt_state": true, "weights_untouched": true, "full_restore": true, "iterations_after_full_restore": 8}
+
+--- stderr ---
+WARNING:tensorflow:From D:\deephedging-rewritten\.venv-tf\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+

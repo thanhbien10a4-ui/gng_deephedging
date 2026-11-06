@@ -1,0 +1,36 @@
+[2026-11-06 16:42:05] Starting execution of trainer-recurrent-barrier.ipynb
+[2026-11-06 16:42:05] Backend: tensorflow | Kernel: dh-rewritten-tf
+[2026-11-06 16:42:05] DH_MODE=smoke | DH_CHECKPOINTS=D:\deephedging-rewritten\results\windows_smoke_20261106_163915\isolated_checkpoints
+[2026-11-06 16:42:06] Kernel initialized successfully. Total cells to execute: 9
+[2026-11-06 16:42:06] Executing Code Cell 1: import os, sys...
+[2026-11-06 16:42:17] Cell 1 completed in 11.08s
+[2026-11-06 16:42:17]   [stdout] WARNING:tensorflow:From D:\deephedging-rewritten\.venv-tf\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+[2026-11-06 16:42:17]   [stdout] Tensorflow version 2.15.1 running on 1 CPUs and 0 GPUs
+[2026-11-06 16:42:17]   [stdout] WARNING:tensorflow:From D:\deephedging-rewritten\.venv-tf\lib\site-packages\tensorflow_probability\python\internal\backend\numpy\_utils.py:48: The name tf.logging.TaskLevelStatusMessage is deprecated. Please use tf.compat.v1.logging.TaskLevelStatusMessage instead.
+[2026-11-06 16:42:17]   [stdout] WARNING:tensorflow:From D:\deephedging-rewritten\.venv-tf\lib\site-packages\tensorflow_probability\python\internal\backend\numpy\_utils.py:48: The name tf.logging.TaskLevelStatusMessage is deprecated. Please use tf.compat.v1.logging.TaskLevelStatusMessage instead.
+[2026-11-06 16:42:17]   [stdout] WARNING:tensorflow:From D:\deephedging-rewritten\.venv-tf\lib\site-packages\tensorflow_probability\python\internal\backend\numpy\_utils.py:48: The name tf.control_flow_v2_enabled is deprecated. Please use tf.compat.v1.control_flow_v2_enabled instead.
+[2026-11-06 16:42:17]   [stdout] WARNING:tensorflow:From D:\deephedging-rewritten\.venv-tf\lib\site-packages\tensorflow_probability\python\internal\backend\numpy\_utils.py:48: The name tf.control_flow_v2_enabled is deprecated. Please use tf.compat.v1.control_flow_v2_enabled instead.
+[2026-11-06 16:42:17]   [stdout] trainer-recurrent-barrier.ipynb (TF) initialized | Mode: smoke
+[2026-11-06 16:42:17] Executing Code Cell 3: strike = 1.0...
+[2026-11-06 16:42:17] Cell 3 completed in 0.08s
+[2026-11-06 16:42:17]   [stdout] Simulating Barrier World: 500 samples, 100 steps...
+[2026-11-06 16:42:17] Executing Code Cell 5: config_none = config.copy()...
+[2026-11-06 16:42:34] Cell 5 completed in 16.64s
+[2026-11-06 16:42:34]   [stdout] Training barrier_none for 2 epochs...
+[2026-11-06 16:42:34]   [stdout] WARNING:tensorflow:From D:\deephedging-rewritten\.venv-tf\lib\site-packages\keras\src\backend.py:873: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+[2026-11-06 16:42:34]   [stdout] WARNING:tensorflow:From D:\deephedging-rewritten\.venv-tf\lib\site-packages\keras\src\backend.py:873: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+[2026-11-06 16:42:34]   [stdout] WARNING:tensorflow:From D:\deephedging-rewritten\.venv-tf\lib\site-packages\keras\src\optimizers\__init__.py:309: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+[2026-11-06 16:42:34]   [stdout] WARNING:tensorflow:From D:\deephedging-rewritten\.venv-tf\lib\site-packages\keras\src\optimizers\__init__.py:309: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+[2026-11-06 16:42:34]   [stdout] WARNING:tensorflow:From D:\deephedging-rewritten\.venv-tf\lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+[2026-11-06 16:42:34]   [stdout] WARNING:tensorflow:From D:\deephedging-rewritten\.venv-tf\lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+[2026-11-06 16:42:34]   [stdout] Finished barrier_none.
+[2026-11-06 16:42:34]   -> Querying kernel for configuration metrics...
+[2026-11-06 16:42:34]   [METRIC] Config 'barrier_none': samples=500, epochs=2, train_loss=0.879771, val_loss=0.530634, finite=True
+[2026-11-06 16:42:34] Executing Code Cell 7: config_digital = config.copy()...
+[2026-11-06 16:42:47] Cell 7 completed in 13.32s
+[2026-11-06 16:42:47]   [stdout] Training barrier_digital for 2 epochs...
+[2026-11-06 16:42:47]   [stdout] Finished barrier_digital.
+[2026-11-06 16:42:47]   -> Querying kernel for configuration metrics...
+[2026-11-06 16:42:47]   [METRIC] Config 'barrier_digital': samples=500, epochs=2, train_loss=0.078929, val_loss=0.046308, finite=True
+[2026-11-06 16:42:50] Notebook trainer-recurrent-barrier.ipynb finished in 45.51s. Captured 2/2 configs.
+[2026-11-06 16:42:50] Saved executed notebook to: D:\deephedging-rewritten\results\windows_smoke_20261106_163915\executed_notebooks\trainer-recurrent-barrier.ipynb

@@ -1,0 +1,26 @@
+=== COMMAND: D:\deephedging-rewritten\.venv-tf\Scripts\python.exe D:\deephedging-rewritten\tests\test_warmup_resume_tf.py ===
+=== ELAPSED: 53.30s ===
+=== EXIT CODE: 1 ===
+
+--- STDOUT ---
+Tensorflow version 2.15.1 running on 1 CPUs and 0 GPUs
+============================================================
+TEST: TensorFlow Warmup and Resume Invariants
+============================================================
+1. Testing Warmup Invariant...
+   Warmup Param Drift: 0.00e+00 (Threshold: 0.0)
+   -> Warmup Verdict: PASS
+
+2. Testing Cross-Process Checkpoint/Cache Resume Invariant...
+   Cache saved after epoch 1. Found 1 cache files.
+   Max Weight Abs Diff vs Continuous: 2.0379e-03 (Threshold <= 1e-5)
+   Cache contents: keys=['gym', 'progress_data'], progress_data.epoch=1
+   gym.restore_from_cache code analysis: dh_tf/gym.py line 371 has early 'return True' before optimizer.set_weights().
+   Optimizer momentum states (m, v) are reset upon fresh process resumption.
+============================================================
+VERDICT: TENSORFLOW RESUME TEST FAILED (Max diff 2.0379e-03 > 1e-5 due to optimizer state loss across processes)
+
+--- STDERR ---
+WARNING:tensorflow:From D:\deephedging-rewritten\.venv-tf\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+

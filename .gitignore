@@ -1,0 +1,41 @@
+# Virtual environments
+.venv/
+.venv-tf/
+.venv-jax/
+venv/
+env/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Binary checkpoints & pickles
+checkpoints/
+isolated_checkpoints/
+*.pkl
+*.pck
+
+# Archives
+*.zip
+*.tar.gz
+*.7z
+
+# Temporary / testing
+work/
+.pytest_cache/
+
+# OS generated
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Secrets & credentials
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+.env

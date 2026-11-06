@@ -1,0 +1,23 @@
+=== COMMAND: D:\deephedging-rewritten\.venv-tf\Scripts\python.exe D:\deephedging-rewritten\tests\test_parity_tf.py ===
+=== ELAPSED: 21.30s ===
+=== EXIT CODE: 0 ===
+
+--- STDOUT ---
+Tensorflow version 2.15.1 running on 1 CPUs and 0 GPUs
+Tensorflow version 2.15.1 running on 1 CPUs and 0 GPUs
+============================================================
+TEST: Numerical Parity (TensorFlow Rewritten vs Original TF)
+============================================================
+1. Spot Path Data Max Abs Diff: 0.00e+00 (Threshold: 0.0)
+2. Rollout Actions Max Abs Diff: 0.00e+00 (Threshold <= 1e-5)
+3. Initial Loss Parity: Mean=0.27831483, MaxPathDiff=0.00e+00, RelDiff=0.00e+00 (Threshold <= 1e-5)
+4. Gradients Max Abs Diff: 0.00e+00 (Threshold <= 1e-5)
+5. One Adam Step Parameter Max Abs Diff: 0.00e+00 (Threshold <= 1e-5)
+============================================================
+VERDICT: TENSORFLOW NUMERICAL PARITY TEST PASSED COMPLETELY!
+============================================================
+
+--- STDERR ---
+WARNING:tensorflow:From D:\deephedging-rewritten\.venv-tf\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+

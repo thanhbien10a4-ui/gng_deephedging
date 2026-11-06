@@ -1,0 +1,648 @@
+{
+  "timestamp": "20261106_163915",
+  "results_dir": "D:\\deephedging-rewritten\\results\\windows_smoke_20261106_163915",
+  "total_duration_sec": 280.63,
+  "total_configs": 24,
+  "pass_count": 24,
+  "fail_count": 0,
+  "configurations": [
+    {
+      "notebook": "trainer.ipynb",
+      "config_id": "trainer_bs",
+      "backend": "jax",
+      "interpreter": "C:\\Users\\Hi Windows 11 Home\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "samples": 500,
+      "actual_epochs": 2,
+      "elapsed_time_sec": 7.07,
+      "train_loss": 0.18627063930034637,
+      "val_loss": 0.17612752318382263,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "notebook": "trainer.ipynb",
+      "config_id": "trainer_sv",
+      "backend": "jax",
+      "interpreter": "C:\\Users\\Hi Windows 11 Home\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "samples": 500,
+      "actual_epochs": 2,
+      "elapsed_time_sec": 4.91,
+      "train_loss": 0.24635282158851624,
+      "val_loss": 0.2682909071445465,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "notebook": "blackscholes.ipynb",
+      "config_id": "bs_base",
+      "backend": "jax",
+      "interpreter": "C:\\Users\\Hi Windows 11 Home\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "samples": 500,
+      "actual_epochs": 2,
+      "elapsed_time_sec": 9.95,
+      "train_loss": 0.430472195148468,
+      "val_loss": 0.3943984806537628,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "notebook": "blackscholes.ipynb",
+      "config_id": "bs_exp2",
+      "backend": "jax",
+      "interpreter": "C:\\Users\\Hi Windows 11 Home\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "samples": 500,
+      "actual_epochs": 2,
+      "elapsed_time_sec": 8.81,
+      "train_loss": 0.6265737414360046,
+      "val_loss": 0.5378820896148682,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "notebook": "blackscholes.ipynb",
+      "config_id": "bs_nodrift",
+      "backend": "jax",
+      "interpreter": "C:\\Users\\Hi Windows 11 Home\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "samples": 500,
+      "actual_epochs": 2,
+      "elapsed_time_sec": 5.69,
+      "train_loss": 0.3672291338443756,
+      "val_loss": 0.33875206112861633,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "notebook": "blackscholes.ipynb",
+      "config_id": "bs_nodrift_exp2",
+      "backend": "jax",
+      "interpreter": "C:\\Users\\Hi Windows 11 Home\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "samples": 500,
+      "actual_epochs": 2,
+      "elapsed_time_sec": 7.72,
+      "train_loss": 0.1794743537902832,
+      "val_loss": 0.16194966435432434,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "notebook": "blackscholes.ipynb",
+      "config_id": "bs_small",
+      "backend": "jax",
+      "interpreter": "C:\\Users\\Hi Windows 11 Home\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "samples": 500,
+      "actual_epochs": 2,
+      "elapsed_time_sec": 8.03,
+      "train_loss": 0.6271657347679138,
+      "val_loss": 0.5733827352523804,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "notebook": "trainer-american_digital.ipynb",
+      "config_id": "am_dig_none",
+      "backend": "jax",
+      "interpreter": "C:\\Users\\Hi Windows 11 Home\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "samples": 500,
+      "actual_epochs": 2,
+      "elapsed_time_sec": 37.25,
+      "train_loss": 0.6721332669258118,
+      "val_loss": 0.7973790764808655,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "notebook": "trainer-american_digital.ipynb",
+      "config_id": "am_dig_digital",
+      "backend": "jax",
+      "interpreter": "C:\\Users\\Hi Windows 11 Home\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "samples": 500,
+      "actual_epochs": 2,
+      "elapsed_time_sec": 37.25,
+      "train_loss": 0.525495171546936,
+      "val_loss": 0.6731935739517212,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "notebook": "trainer-american_digital.ipynb",
+      "config_id": "am_dig_standard",
+      "backend": "jax",
+      "interpreter": "C:\\Users\\Hi Windows 11 Home\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "samples": 500,
+      "actual_epochs": 2,
+      "elapsed_time_sec": 37.25,
+      "train_loss": 0.5273330211639404,
+      "val_loss": 0.6747881770133972,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "notebook": "trainer-american_digital.ipynb",
+      "config_id": "am_dig_mix_relu",
+      "backend": "jax",
+      "interpreter": "C:\\Users\\Hi Windows 11 Home\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "samples": 500,
+      "actual_epochs": 2,
+      "elapsed_time_sec": 37.25,
+      "train_loss": 1.468122124671936,
+      "val_loss": 1.5624934434890747,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "notebook": "trainer-american_digital.ipynb",
+      "config_id": "am_dig_mix_softplus",
+      "backend": "jax",
+      "interpreter": "C:\\Users\\Hi Windows 11 Home\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "samples": 500,
+      "actual_epochs": 2,
+      "elapsed_time_sec": 37.25,
+      "train_loss": 0.5220964550971985,
+      "val_loss": 0.6715279817581177,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "notebook": "trainer-recurrent-barrier_smalldt.ipynb",
+      "config_id": "barrier_sdt_none",
+      "backend": "jax",
+      "interpreter": "C:\\Users\\Hi Windows 11 Home\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "samples": 500,
+      "actual_epochs": 2,
+      "elapsed_time_sec": 13.76,
+      "train_loss": 0.028354279696941376,
+      "val_loss": 0.028065362945199013,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "notebook": "trainer-recurrent-barrier_smalldt.ipynb",
+      "config_id": "barrier_sdt_digital",
+      "backend": "jax",
+      "interpreter": "C:\\Users\\Hi Windows 11 Home\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "samples": 500,
+      "actual_epochs": 2,
+      "elapsed_time_sec": 13.76,
+      "train_loss": 0.006559525616466999,
+      "val_loss": 0.005541178397834301,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "notebook": "trainer-bs.ipynb",
+      "config_id": "trainer_bs_coarse",
+      "backend": "tensorflow",
+      "interpreter": "D:\\deephedging-rewritten\\.venv-tf\\Scripts\\python.exe",
+      "samples": 500,
+      "actual_epochs": 2,
+      "elapsed_time_sec": 11.17,
+      "train_loss": 0.5922021865844727,
+      "val_loss": 0.634064257144928,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "notebook": "trainer-bs.ipynb",
+      "config_id": "trainer_bs_fine",
+      "backend": "tensorflow",
+      "interpreter": "D:\\deephedging-rewritten\\.venv-tf\\Scripts\\python.exe",
+      "samples": 500,
+      "actual_epochs": 2,
+      "elapsed_time_sec": 5.77,
+      "train_loss": 0.8897339701652527,
+      "val_loss": 0.8314699530601501,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "notebook": "trainer-recurrent-barrier.ipynb",
+      "config_id": "barrier_none",
+      "backend": "tensorflow",
+      "interpreter": "D:\\deephedging-rewritten\\.venv-tf\\Scripts\\python.exe",
+      "samples": 500,
+      "actual_epochs": 2,
+      "elapsed_time_sec": 16.64,
+      "train_loss": 0.8797709345817566,
+      "val_loss": 0.5306336283683777,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "notebook": "trainer-recurrent-barrier.ipynb",
+      "config_id": "barrier_digital",
+      "backend": "tensorflow",
+      "interpreter": "D:\\deephedging-rewritten\\.venv-tf\\Scripts\\python.exe",
+      "samples": 500,
+      "actual_epochs": 2,
+      "elapsed_time_sec": 13.32,
+      "train_loss": 0.0789288654923439,
+      "val_loss": 0.046307869255542755,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "notebook": "trainer-recurrent-fwdstart.ipynb",
+      "config_id": "fwd_none",
+      "backend": "tensorflow",
+      "interpreter": "D:\\deephedging-rewritten\\.venv-tf\\Scripts\\python.exe",
+      "samples": 500,
+      "actual_epochs": 2,
+      "elapsed_time_sec": 10.82,
+      "train_loss": 0.415653795003891,
+      "val_loss": 0.4525172710418701,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "notebook": "trainer-recurrent-fwdstart.ipynb",
+      "config_id": "fwd_all_modes",
+      "backend": "tensorflow",
+      "interpreter": "D:\\deephedging-rewritten\\.venv-tf\\Scripts\\python.exe",
+      "samples": 500,
+      "actual_epochs": 2,
+      "elapsed_time_sec": 8.52,
+      "train_loss": 0.0611700639128685,
+      "val_loss": 0.06470131129026413,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "notebook": "trainer-recurrent-fwdstart.ipynb",
+      "config_id": "fwd_aggr_2",
+      "backend": "tensorflow",
+      "interpreter": "D:\\deephedging-rewritten\\.venv-tf\\Scripts\\python.exe",
+      "samples": 500,
+      "actual_epochs": 2,
+      "elapsed_time_sec": 8.16,
+      "train_loss": 0.08214730769395828,
+      "val_loss": 0.08772769570350647,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "notebook": "trainer-recurrent-fwdstart.ipynb",
+      "config_id": "fwd_aggr_5bnd",
+      "backend": "tensorflow",
+      "interpreter": "D:\\deephedging-rewritten\\.venv-tf\\Scripts\\python.exe",
+      "samples": 500,
+      "actual_epochs": 2,
+      "elapsed_time_sec": 8.09,
+      "train_loss": 0.06358237564563751,
+      "val_loss": 0.06664663553237915,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "notebook": "trainer-recurrent-fwdstart.ipynb",
+      "config_id": "fwd_aggr_5",
+      "backend": "tensorflow",
+      "interpreter": "D:\\deephedging-rewritten\\.venv-tf\\Scripts\\python.exe",
+      "samples": 500,
+      "actual_epochs": 2,
+      "elapsed_time_sec": 8.87,
+      "train_loss": 0.07707677781581879,
+      "val_loss": 0.08233247697353363,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "notebook": "trainer-recurrent-fwdstart.ipynb",
+      "config_id": "fwd_past_repr",
+      "backend": "tensorflow",
+      "interpreter": "D:\\deephedging-rewritten\\.venv-tf\\Scripts\\python.exe",
+      "samples": 500,
+      "actual_epochs": 2,
+      "elapsed_time_sec": 8.09,
+      "train_loss": 0.06421937048435211,
+      "val_loss": 0.06645303219556808,
+      "status": "PASS",
+      "error": ""
+    }
+  ],
+  "notebooks": [
+    {
+      "notebook": "trainer.ipynb",
+      "backend": "jax",
+      "kernel": "dh-rewritten-jax",
+      "interpreter": "C:\\Users\\Hi Windows 11 Home\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "duration_sec": 20.65,
+      "expected_configs": [
+        "trainer_bs",
+        "trainer_sv"
+      ],
+      "config_results": {
+        "trainer_bs": {
+          "id": "trainer_bs",
+          "samples": 500,
+          "epochs": 2,
+          "train_loss": 0.18627063930034637,
+          "val_loss": 0.17612752318382263,
+          "is_finite": true,
+          "cell_duration_sec": 7.07
+        },
+        "trainer_sv": {
+          "id": "trainer_sv",
+          "samples": 500,
+          "epochs": 2,
+          "train_loss": 0.24635282158851624,
+          "val_loss": 0.2682909071445465,
+          "is_finite": true,
+          "cell_duration_sec": 4.91
+        }
+      },
+      "error": null
+    },
+    {
+      "notebook": "blackscholes.ipynb",
+      "backend": "jax",
+      "kernel": "dh-rewritten-jax",
+      "interpreter": "C:\\Users\\Hi Windows 11 Home\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "duration_sec": 45.3,
+      "expected_configs": [
+        "bs_base",
+        "bs_exp2",
+        "bs_nodrift",
+        "bs_nodrift_exp2",
+        "bs_small"
+      ],
+      "config_results": {
+        "bs_base": {
+          "id": "bs_base",
+          "samples": 500,
+          "epochs": 2,
+          "train_loss": 0.430472195148468,
+          "val_loss": 0.3943984806537628,
+          "is_finite": true,
+          "cell_duration_sec": 9.95
+        },
+        "bs_exp2": {
+          "id": "bs_exp2",
+          "samples": 500,
+          "epochs": 2,
+          "train_loss": 0.6265737414360046,
+          "val_loss": 0.5378820896148682,
+          "is_finite": true,
+          "cell_duration_sec": 8.81
+        },
+        "bs_nodrift": {
+          "id": "bs_nodrift",
+          "samples": 500,
+          "epochs": 2,
+          "train_loss": 0.3672291338443756,
+          "val_loss": 0.33875206112861633,
+          "is_finite": true,
+          "cell_duration_sec": 5.69
+        },
+        "bs_nodrift_exp2": {
+          "id": "bs_nodrift_exp2",
+          "samples": 500,
+          "epochs": 2,
+          "train_loss": 0.1794743537902832,
+          "val_loss": 0.16194966435432434,
+          "is_finite": true,
+          "cell_duration_sec": 7.72
+        },
+        "bs_small": {
+          "id": "bs_small",
+          "samples": 500,
+          "epochs": 2,
+          "train_loss": 0.6271657347679138,
+          "val_loss": 0.5733827352523804,
+          "is_finite": true,
+          "cell_duration_sec": 8.03
+        }
+      },
+      "error": null
+    },
+    {
+      "notebook": "trainer-american_digital.ipynb",
+      "backend": "jax",
+      "kernel": "dh-rewritten-jax",
+      "interpreter": "C:\\Users\\Hi Windows 11 Home\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "duration_sec": 43.73,
+      "expected_configs": [
+        "am_dig_none",
+        "am_dig_digital",
+        "am_dig_standard",
+        "am_dig_mix_relu",
+        "am_dig_mix_softplus"
+      ],
+      "config_results": {
+        "am_dig_none": {
+          "id": "am_dig_none",
+          "samples": 500,
+          "epochs": 2,
+          "train_loss": 0.6721332669258118,
+          "val_loss": 0.7973790764808655,
+          "is_finite": true,
+          "cell_duration_sec": 37.25
+        },
+        "am_dig_digital": {
+          "id": "am_dig_digital",
+          "samples": 500,
+          "epochs": 2,
+          "train_loss": 0.525495171546936,
+          "val_loss": 0.6731935739517212,
+          "is_finite": true,
+          "cell_duration_sec": 37.25
+        },
+        "am_dig_standard": {
+          "id": "am_dig_standard",
+          "samples": 500,
+          "epochs": 2,
+          "train_loss": 0.5273330211639404,
+          "val_loss": 0.6747881770133972,
+          "is_finite": true,
+          "cell_duration_sec": 37.25
+        },
+        "am_dig_mix_relu": {
+          "id": "am_dig_mix_relu",
+          "samples": 500,
+          "epochs": 2,
+          "train_loss": 1.468122124671936,
+          "val_loss": 1.5624934434890747,
+          "is_finite": true,
+          "cell_duration_sec": 37.25
+        },
+        "am_dig_mix_softplus": {
+          "id": "am_dig_mix_softplus",
+          "samples": 500,
+          "epochs": 2,
+          "train_loss": 0.5220964550971985,
+          "val_loss": 0.6715279817581177,
+          "is_finite": true,
+          "cell_duration_sec": 37.25
+        }
+      },
+      "error": null
+    },
+    {
+      "notebook": "trainer-recurrent-barrier_smalldt.ipynb",
+      "backend": "jax",
+      "kernel": "dh-rewritten-jax",
+      "interpreter": "C:\\Users\\Hi Windows 11 Home\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "duration_sec": 19.16,
+      "expected_configs": [
+        "barrier_sdt_none",
+        "barrier_sdt_digital"
+      ],
+      "config_results": {
+        "barrier_sdt_none": {
+          "id": "barrier_sdt_none",
+          "samples": 500,
+          "epochs": 2,
+          "train_loss": 0.028354279696941376,
+          "val_loss": 0.028065362945199013,
+          "is_finite": true,
+          "cell_duration_sec": 13.76
+        },
+        "barrier_sdt_digital": {
+          "id": "barrier_sdt_digital",
+          "samples": 500,
+          "epochs": 2,
+          "train_loss": 0.006559525616466999,
+          "val_loss": 0.005541178397834301,
+          "is_finite": true,
+          "cell_duration_sec": 13.76
+        }
+      },
+      "error": null
+    },
+    {
+      "notebook": "trainer-bs.ipynb",
+      "backend": "tensorflow",
+      "kernel": "dh-rewritten-tf",
+      "interpreter": "D:\\deephedging-rewritten\\.venv-tf\\Scripts\\python.exe",
+      "duration_sec": 36.36,
+      "expected_configs": [
+        "trainer_bs_coarse",
+        "trainer_bs_fine"
+      ],
+      "config_results": {
+        "trainer_bs_coarse": {
+          "id": "trainer_bs_coarse",
+          "samples": 500,
+          "epochs": 2,
+          "train_loss": 0.5922021865844727,
+          "val_loss": 0.634064257144928,
+          "is_finite": true,
+          "cell_duration_sec": 11.17
+        },
+        "trainer_bs_fine": {
+          "id": "trainer_bs_fine",
+          "samples": 500,
+          "epochs": 2,
+          "train_loss": 0.8897339701652527,
+          "val_loss": 0.8314699530601501,
+          "is_finite": true,
+          "cell_duration_sec": 5.77
+        }
+      },
+      "error": null
+    },
+    {
+      "notebook": "trainer-recurrent-barrier.ipynb",
+      "backend": "tensorflow",
+      "kernel": "dh-rewritten-tf",
+      "interpreter": "D:\\deephedging-rewritten\\.venv-tf\\Scripts\\python.exe",
+      "duration_sec": 45.51,
+      "expected_configs": [
+        "barrier_none",
+        "barrier_digital"
+      ],
+      "config_results": {
+        "barrier_none": {
+          "id": "barrier_none",
+          "samples": 500,
+          "epochs": 2,
+          "train_loss": 0.8797709345817566,
+          "val_loss": 0.5306336283683777,
+          "is_finite": true,
+          "cell_duration_sec": 16.64
+        },
+        "barrier_digital": {
+          "id": "barrier_digital",
+          "samples": 500,
+          "epochs": 2,
+          "train_loss": 0.0789288654923439,
+          "val_loss": 0.046307869255542755,
+          "is_finite": true,
+          "cell_duration_sec": 13.32
+        }
+      },
+      "error": null
+    },
+    {
+      "notebook": "trainer-recurrent-fwdstart.ipynb",
+      "backend": "tensorflow",
+      "kernel": "dh-rewritten-tf",
+      "interpreter": "D:\\deephedging-rewritten\\.venv-tf\\Scripts\\python.exe",
+      "duration_sec": 69.67,
+      "expected_configs": [
+        "fwd_none",
+        "fwd_all_modes",
+        "fwd_aggr_2",
+        "fwd_aggr_5bnd",
+        "fwd_aggr_5",
+        "fwd_past_repr"
+      ],
+      "config_results": {
+        "fwd_none": {
+          "id": "fwd_none",
+          "samples": 500,
+          "epochs": 2,
+          "train_loss": 0.415653795003891,
+          "val_loss": 0.4525172710418701,
+          "is_finite": true,
+          "cell_duration_sec": 10.82
+        },
+        "fwd_all_modes": {
+          "id": "fwd_all_modes",
+          "samples": 500,
+          "epochs": 2,
+          "train_loss": 0.0611700639128685,
+          "val_loss": 0.06470131129026413,
+          "is_finite": true,
+          "cell_duration_sec": 8.52
+        },
+        "fwd_aggr_2": {
+          "id": "fwd_aggr_2",
+          "samples": 500,
+          "epochs": 2,
+          "train_loss": 0.08214730769395828,
+          "val_loss": 0.08772769570350647,
+          "is_finite": true,
+          "cell_duration_sec": 8.16
+        },
+        "fwd_aggr_5bnd": {
+          "id": "fwd_aggr_5bnd",
+          "samples": 500,
+          "epochs": 2,
+          "train_loss": 0.06358237564563751,
+          "val_loss": 0.06664663553237915,
+          "is_finite": true,
+          "cell_duration_sec": 8.09
+        },
+        "fwd_aggr_5": {
+          "id": "fwd_aggr_5",
+          "samples": 500,
+          "epochs": 2,
+          "train_loss": 0.07707677781581879,
+          "val_loss": 0.08233247697353363,
+          "is_finite": true,
+          "cell_duration_sec": 8.87
+        },
+        "fwd_past_repr": {
+          "id": "fwd_past_repr",
+          "samples": 500,
+          "epochs": 2,
+          "train_loss": 0.06421937048435211,
+          "val_loss": 0.06645303219556808,
+          "is_finite": true,
+          "cell_duration_sec": 8.09
+        }
+      },
+      "error": null
+    }
+  ]
+}

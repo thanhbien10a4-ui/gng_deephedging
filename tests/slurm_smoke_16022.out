@@ -1,0 +1,37 @@
+=== Slurm Job Starting ===
+Node: dgx01
+Date: Thu 05 Nov 2026 09:13:11 AM +07
+Tensorflow version 2.15.1 running on 1 CPUs and 0 GPUs
+===========================================================================
+RUNNING SMOKE TEST ON ALL 24 CONFIGURATIONS VIA SLURM COMPUTE NODE
+Host: dgx01 | Time: 2026-11-05 09:13:21
+===========================================================================
+[01/24] bs_base                | JAX        | PASS         |   4.1s | FinalLoss: 0.198540
+[02/24] bs_exp2                | JAX        | PASS         |   3.1s | FinalLoss: 0.152307
+[03/24] bs_nodrift             | JAX        | PASS         |   2.7s | FinalLoss: 0.204410
+[04/24] bs_nodrift_exp2        | JAX        | PASS         |   2.8s | FinalLoss: 0.162761
+[05/24] bs_small               | JAX        | PASS         |   2.9s | FinalLoss: 0.279515
+[06/24] trainer_bs_coarse      | TENSORFLOW | PASS         |   6.0s | FinalLoss: 0.548746
+[07/24] trainer_bs_fine        | TENSORFLOW | PASS         |   3.4s | FinalLoss: 0.353579
+[08/24] trainer_bs             | JAX        | PASS         |   2.6s | FinalLoss: 0.185897
+[09/24] trainer_sv             | JAX        | PASS         |   3.2s | FinalLoss: 0.295588
+[10/24] am_dig_none            | JAX        | PASS         |   4.8s | FinalLoss: 1.207260
+[11/24] am_dig_digital         | JAX        | PASS         |   5.5s | FinalLoss: 11.09025
+[12/24] am_dig_standard        | JAX        | PASS         |   5.1s | FinalLoss: 1.953993
+[13/24] am_dig_mix_relu        | JAX        | PASS         |   4.2s | FinalLoss: 4.700984
+[14/24] am_dig_mix_softplus    | JAX        | PASS         |   7.5s | FinalLoss: 1.487283
+[15/24] barrier_none           | TENSORFLOW | PASS         |   7.7s | FinalLoss: 0.243179
+[16/24] barrier_digital        | TENSORFLOW | PASS         |   9.0s | FinalLoss: 0.094573
+[17/24] barrier_sdt_none       | JAX        | PASS         |   4.1s | FinalLoss: 0.029517
+[18/24] barrier_sdt_digital    | JAX        | PASS         |   3.3s | FinalLoss: 0.024138
+[19/24] fwd_none               | TENSORFLOW | PASS         |   4.7s | FinalLoss: 0.063740
+[20/24] fwd_all_modes          | TENSORFLOW | PASS         |   5.4s | FinalLoss: 0.062513
+[21/24] fwd_aggr_2             | TENSORFLOW | PASS         |   4.9s | FinalLoss: 0.326493
+[22/24] fwd_aggr_5bnd          | TENSORFLOW | PASS         |   5.8s | FinalLoss: 0.065763
+[23/24] fwd_aggr_5             | TENSORFLOW | PASS         |   4.9s | FinalLoss: 0.064119
+[24/24] fwd_past_repr          | TENSORFLOW | PASS         |   4.9s | FinalLoss: 0.063870
+===========================================================================
+OVERALL SMOKE VERDICT: 24/24 PASSED (100.0%) in 112.5s
+Detailed results saved to /home/user04/gng_deephedging/deephedging-rewritten/tests/smoke_24_results.json
+===========================================================================
+=== Slurm Job Finished with exit code: 0 ===
